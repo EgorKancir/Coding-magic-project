@@ -1,0 +1,22 @@
+.football-game {
+    width: 100%;
+    height: 220px;
+    border-radius: 37px;
+    border: 2px solid $black;
+    background: $bright-green;
+    position: relative;
+    &__padding {
+        padding: 0 185px 36px 185px;
+    }
+    &__ball {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        background-image: url("../image/raster/football-game/football@1x.png");
+    }
+}

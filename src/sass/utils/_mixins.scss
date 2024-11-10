@@ -1,0 +1,26 @@
+@mixin display-j-content-align($display, $j-content, $align)  {
+    display: $display;
+    justify-content: $j-content;
+    align-items: $align;
+}
+
+@mixin flex-j-content($flex, $js-content) {
+    display: $flex;
+    justify-content: $js-content;
+}
+
+@mixin d-flex-items($d-flex, $items) {
+    display: $d-flex;
+    align-items: $items;
+}
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex-dop($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

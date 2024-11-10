@@ -1,0 +1,130 @@
+.header {
+    background-color: $white;
+    &__content {
+        @include flex(space-between, center);
+        padding: 21px 15px;
+    }
+    &__main-group {
+        @extend %position-center;
+        gap: 80px;
+    }
+    &__logo-image {
+        width: 93px;
+        height: 38.145px;
+        flex-shrink: 0;
+    }
+    &__info-group {
+        @extend %position-center;
+        gap: 50px;
+    }
+    &__welcome {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+.nav {
+    &__list {
+        @extend %position-center;
+        gap: 50px;
+    }
+    &__select {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+    }
+    &__select-option {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__list-link {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+.type-page {
+    width: 40px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: $grey;
+    position: relative;
+    cursor: pointer;
+    &__checbox {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 100;
+        opacity: 0;
+        &:checked .type-page__ball {
+            right: 0;
+            transition: all 0.3s ease;
+        }
+    }
+    &__ball {
+        width: 20.5px;
+        height: 20px;
+        flex-shrink: 0;
+        background-color: $white;
+        border-radius: 100%;
+        border: 0.5px solid $black;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        z-index: 25;
+    }
+    &__light {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        z-index: 50;
+        top: 50%;
+        left: 2.73px;
+        transform: translateY(-50%);
+        background-image: url("../image/vector/sun.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.1s ease-in;
+    }
+    &__dark {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        z-index: 50;
+        top: 50%;
+        right: 2.73px;
+        transform: translateY(-50%);
+        background-image: url("../image/vector/month.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.1s ease-in;
+    }
+}
+.inactive {
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+.move {
+    right: 0;
+    left: auto;
+    background-color: $black;
+    transition: all 0.3s ease-in-out;
+}

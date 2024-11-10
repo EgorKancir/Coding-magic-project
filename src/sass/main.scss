@@ -1,0 +1,90 @@
+body {
+    background: #EEE;
+    color: rgb(103, 58, 145);
+    // cursor: url("../image/vector/football-game/cursor.svg");
+    background-image: url("../image/raster/background-image@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 85px;
+    transition: all 0.8s ease-in-out;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, hr {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input, textarea, button {
+    outline: none;
+    border: none;
+    padding: 0;
+    &:focus-visible {
+        outline: none;
+        border: none;
+        color: black;
+    }
+}
+@import 
+'./utils/mixins',
+'./utils/placeholders',
+'./utils/variable';
+@import 
+'./components/greeting-modal',
+'./components/header',
+'./components/game-section',
+'./components/checking-year',
+'./components/guess-number',
+'./components/ssp-game',
+'./components/calculator-game',
+'./components/timer-game',
+'./components/dino-game',
+'./components/football-game',
+'./components/max-number-game',
+'./components/team-slider',
+'./components/filter-scientists';
+.main {
+    @extend %position-center-column;
+    &__title {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__title-box {
+        padding: 36px 0;
+        background-color: $white;
+        @extend %position-center;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 734px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 480px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 365px;
+    }
+}
+@media (max-width: 365px) {
+    .container {
+        width: 320px;
+    }
+}

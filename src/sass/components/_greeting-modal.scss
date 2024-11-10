@@ -1,0 +1,127 @@
+.greeting-modal {
+    display: none;
+    width: 576px;
+    height: 316px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: $white;
+    transition: all 0.5s ease-in;
+    padding: 46px 92px;
+    @extend %position-center-column;
+    background-image: url("../image/raster/modal/sword@1x.png"), url("../image/raster/modal/puzzle@1x.png"), url("../image/raster/modal/game-development@1x.png"), url("../image/raster/modal/tic-tac-toe@1x.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: top 154px left 41px, bottom 56px left 85px, top 154px right 41px, bottom 56px right 85px;
+    gap: 42px;
+    &__main-group {
+        @extend %position-center;
+    }
+    &__main-text {
+        width: 393px;
+        color: $black;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__close-btn {
+        position: absolute;
+        background: inherit;
+        border: none;
+        @extend %position-center;
+        top: 30px;
+        right: 30px;
+        flex-shrink: 0;
+        stroke: $black;
+        &:hover {
+            stroke: $grey;
+            transform: scale(1.1);
+            transition: all 0.2s ease;
+        }
+    }
+    &__close-btn-svg {
+        width: 15px;
+        height: 15px;
+    }
+    &__form {
+        @extend %position-center-column;
+        gap: 18px;
+    }
+    &__label {
+        @extend %position-center-column;
+        gap: 18px;
+        color: $black;
+        text-align: center;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__input {
+        outline: none;
+        border: none;
+        display: inline-flex;
+        width: 169px;
+        padding: 10px 90px 10px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: $grey-white;
+        color: $dark-grey;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:focus-visible {
+            outline: none;
+            border: none;
+        }
+    }
+    &__save-btn {
+        border: none;
+        outline: none;
+        display: inline-flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: $black;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        color: $white;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+            background: $white;
+            color: $black;
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &__backdrop {
+        display: none;
+    }
+}
+.open-modal {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.open-modal__activ-backdrop {
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    background-color: $grey;
+    opacity: 0.6;
+    display: block;
+}

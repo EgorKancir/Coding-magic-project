@@ -1,0 +1,40 @@
+.max-number-game {
+    width: 100%;
+    @extend %position-center;
+    flex-direction: column;
+    gap: 36px;
+    &__padding {
+        padding: 0 270px 36px 270px;
+    }
+    &__form {
+        @extend %position-center;
+        gap: 38px;
+    }
+    &__label {
+        display: flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $grey-white;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__input {
+        width: 95px;
+        background: inherit;
+        color: $dark-grey;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+    }
+    &__resulat {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,98 @@
+.calculator-game {
+    width: 100%;
+    @include flex(space-between, center);
+    &__padding {
+        padding: 0 230px 36px 230px;
+    }
+    &__form {
+        @extend %position-center;
+        gap: 38px;
+    }
+    &__number-label {
+        display: flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $grey-white;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__number-input {
+        width: 95px;
+        background: inherit;
+        color: $dark-grey;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: start;
+    }
+    &__signs-group {
+        width: 62px;
+        height: 60px;
+        flex-shrink: 0;
+        @extend %position-center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__sign {
+        display: none;
+        &:checked + .calculator-game__sign-label {
+            background: $blue-original;
+        }
+    }
+    &__sign-label {
+        display: flex;
+        padding: 5px 10px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $black;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        color: $white;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &__decision-btn {
+        display: flex;
+        padding: 5px 10px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $black;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        color: $white;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &__resulat {
+        display: flex;
+        padding: 10px 20px;
+        align-items: flex-start;
+        border-radius: 20px;
+        background: $grey-white;
+        box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+        color: $dark-grey;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

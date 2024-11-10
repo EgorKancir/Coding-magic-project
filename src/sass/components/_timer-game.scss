@@ -1,0 +1,21 @@
+.timer-game {
+    @extend %position-center;
+    gap: 33px;
+    &__padding {
+        padding: 0 230px 36px 230px;
+    }
+    &__form {
+        width: 150px;
+    }
+    &__input {
+        width: 115px;
+    }
+    &__result {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

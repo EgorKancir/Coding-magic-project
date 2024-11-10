@@ -1,0 +1,20 @@
+.game-section {
+    width: 100%;
+    @extend %position-center-column;
+    gap: 36px;
+    background-color: $white;
+    &__decor-line {
+        width: 536px;
+        height: 1px;
+        flex-shrink: 0;
+        background-color: $black;
+    }
+    &__title {
+        color: $black;
+        font-family: "Montserrat Alternates";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

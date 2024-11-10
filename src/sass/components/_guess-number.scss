@@ -1,0 +1,22 @@
+.guess-number {
+    width: 100%;
+    @include flex(space-between, center);
+    &__padding {
+        padding: 0 257px 36px 257px;
+    }
+    &__result {
+        color: $green;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__form {
+        width: 150px;
+    }
+    &__input {
+        width: 115px;
+    }
+}

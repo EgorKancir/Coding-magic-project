@@ -1,0 +1,72 @@
+.checking-year {
+    width: 100%;
+    @include flex(space-between, center);
+    &__result {
+        color: $green;
+        text-align: right;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__padding {
+        padding: 0 257px 36px 257px;
+    }
+}
+.checking-form {
+    width: 215px;
+    height: 35px;
+    border-radius: 20px;
+    background: $grey-white;
+    box-shadow: 3px 3px gray;
+    position: relative;
+    overflow-x: hidden;
+    &__label {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: inherit;
+    }
+    &__input {
+        width: 180px;
+        height: 35px;
+        background: inherit;
+        padding: 10px;
+        color: $dark-grey;
+        font-family: "Montserrat Alternates";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        &:focus-visible {
+            border: none;
+            outline: none;
+        }
+    }
+    &__submit {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none ;
+        outline: none;
+        width: 35px;
+        height: 35px;
+        @extend %position-center;
+        background: $black;
+        &:hover {
+            background: $white;
+            .checking-form__submit-svg {
+                stroke: $black;
+            }
+        }
+    }
+    &__submit-svg {
+        width: 15px;
+        height: 15px;
+        stroke: $white;
+    }
+}
