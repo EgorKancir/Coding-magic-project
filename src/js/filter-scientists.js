@@ -1,3 +1,12 @@
+const scientistsParent = document.querySelector('.filter-scientists__image-group');
+const scientistsImageArr = Array.from(scientistsParent.children);
+const mainBtnGroup = document.querySelectorAll('.filter-scientists__filter-option-group');
+const leftBtnParent = document.querySelector('.filter-scientists__filter-option-left-section');
+const leftBtnArr = Array.from(leftBtnParent.children);
+const rightBtnParent = document.querySelector('.filter-scientists__filter-option-right-section');
+const rightBtnArr = Array.from(rightBtnParent.children);
+const bottomBtn = document.querySelector('filter-scientists__filter-option-btn-bottom');
+
 const scientists = [
     {
         name: "Albert",
@@ -84,3 +93,132 @@ const scientists = [
         id: 12
     }
 ];
+
+function selectScientist(id) {
+    let newId = id - 1;
+    scientistsImageArr[newId].classList.add('filter-scientists__active-scientist');
+}
+function removeClass() {
+    scientistsImageArr.forEach(elemen => {
+        for (let i = 0; i < scientistsImageArr.length; i++) {
+            elemen.classList.remove(`filter-scientists__image--${i+1}`);   
+        }
+    }) 
+    for (let i = 0; i < scientistsImageArr.length; i++) {
+        scientistsImageArr[i].classList.add(`filter-scientists__image--${i+1}`)
+    }
+    scientistsImageArr.forEach(img => {
+        img.classList.remove('filter-scientists__active-scientist');
+        img.classList.remove('filter-scientists__image--default');
+    });
+    leftBtnArr.forEach(btn => {
+        btn.classList.remove('filter-scientists__active-btn');
+    });
+    rightBtnArr.forEach(btn => {
+        btn.classList.remove('filter-scientists__active-btn');
+    });
+    mainBtnGroup.forEach(btn => {
+        btn.classList.remove('filter-scientists__active-btn');
+    });
+}
+// 1
+function centuryBirth(arr, startCentury, endCentry) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].born > startCentury && arr[i].born < endCentry) {
+            selectScientist(arr[i].id);
+        } else {
+            continue
+        }
+    }
+}
+leftBtnArr[0].addEventListener('click', () => {
+    removeClass();
+    centuryBirth(scientists, 1801, 1900);
+    leftBtnArr[0].classList.add('filter-scientists__active-btn');
+});
+// 1  
+// 2
+const copyScientistsArr = scientists.slice();
+const sortedScientists = copyScientistsArr.sort((a, b) => {
+    if (a.surname < b.surname) return -1;
+    if (a.surname > b.surname) return 1;
+    return 0;
+});
+const positionScientistsArr = [];
+for (let i = 0; i < sortedScientists.length; i++) {
+    positionScientistsArr.push(sortedScientists[i].id);
+}
+function abcScientist(positionArr, imageArr) {
+    for (let i = 0; i < positionArr.length; i++) {
+        imageArr[i].classList.remove(`filter-scientists__image--${i+1}`);
+        imageArr[i].classList.add(`filter-scientists__image--${positionArr[i]}`)
+        imageArr[i].classList.add('filter-scientists__image--default');
+
+    }
+}
+leftBtnArr[1].addEventListener('click', () => {
+    removeClass();
+    abcScientist(positionScientistsArr, scientistsImageArr);
+    leftBtnArr[1].classList.add('filter-scientists__active-btn');
+})
+// 3
+// 4
+const severalYearsArr = [];
+
+scientists.forEach(scientist => {
+    let bornScientist = scientist.born;
+    let deadScientist = scientist.dead;
+    let scientistAgeObj = {
+        age: ageCalculator(bornScientist, deadScientist),
+        id: scientist.id
+    };
+    severalYearsArr.push(scientistAgeObj);
+});
+
+function ageCalculator(born, dead) {
+    return dead - born;
+}
+
+severalYearsArr.sort((a, b) => a.age - b.age);
+
+function scientistAgePosition(arrAge, imageArr) {
+    for (let i = 0; i < arrAge.length; i++) {
+        imageArr[i].classList.remove(`filter-scientists__image--${i+1}`);
+        imageArr[i].classList.add(`filter-scientists__image--${arrAge[i].id}`)
+        imageArr[i].classList.add('filter-scientists__image--default');
+    }
+}
+
+leftBtnArr[2].addEventListener('click', () => {
+    removeClass();
+    scientistAgePosition(severalYearsArr, scientistsImageArr);
+    leftBtnArr[2].classList.add('filter-scientists__active-btn');
+})
+// 4
+// 5
+function youngestScientist(scientistArr) {
+    let youngest = scientistArr[0].born;
+    let youngestId = scientistArr[0].id;
+    for (let i = 0; i < scientistArr.length; i++) {
+        if (youngest < scientistArr[i].born) {
+            youngest = scientistArr[i].born;
+            youngestId = scientistArr[i].id;
+        } else {
+            continue
+        }
+    }
+    selectScientist(youngestId);
+}
+
+leftBtnArr[3].addEventListener('click', () => {
+    removeClass();
+    youngestScientist(scientists);
+    leftBtnArr[3].classList.add('filter-scientists__active-btn');
+});
+// 5
+// 6
+rightBtnArr[0].addEventListener('click', () => {
+    removeClass();
+    scientistsImageArr[0].classList.add('filter-scientists__image--after');
+    rightBtnArr[0].classList.add('filter-scientists__active-btn');
+});
