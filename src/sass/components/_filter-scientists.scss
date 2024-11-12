@@ -10,6 +10,7 @@
         grid-template-rows: repeat(3, 100px);
         grid-column-gap: 59px;
         grid-row-gap: 36px;
+        position: relative;
     }
     &__image {
         opacity: 0.3;
@@ -21,20 +22,30 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        position: relative;
+        cursor: pointer;
         &:hover {
             opacity: 1;
             transition: all 0.3s ease-in-out;
             &::after {
-                transform: scaleY(1.2);
-                transform: scaleX(1.5);
+                opacity: 1;
                 position: absolute;
+                width: 577px;
+                height: 40px;
+                border-radius: 20px;
+                @extend %position-center;
                 color: $white;
+                font-family: "Montserrat Alternates";
                 background-color: $black;
-                padding: 6px;
-                width: 100%;
-                height: 100%;
-                border-radius: 15px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                top: -65px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px;
+                transition: all 0.3s ease-in-out;
+                z-index: 100;
             }
         }
         &:nth-child(1) {
@@ -78,89 +89,98 @@
         opacity: 1;
         transition: all 0.3s ease-in-out;
         &::after {
-            content: "7777";
-            transform: scaleY(1.2);
-            transform: scaleX(1.5);
+            content: "Name: Albert, Surname: Einstein, Born: 1879.";
+            opacity: 1;
             position: absolute;
+            width: 577px;
+            height: 40px;
+            border-radius: 20px;
+            @extend %position-center;
             color: $white;
+            font-family: "Montserrat Alternates";
             background-color: $black;
-            padding: 6px;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            z-index: 100;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+            z-index: 50;
         }
     }
     &__image--1 {
         background-image: url("../image/raster/filter-scientist/albert-einsteit.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Albert, Surname: Einstein, Born: 1879, Dead: 1955.";
         }
     }
     &__image--2 {
         background-image: url("../image/raster/filter-scientist/isaac-newton.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Isaac, Surname: Newton, Born: 1643, Dead: 1727.";
         }
     }
     &__image--3 {
         background-image: url("../image/raster/filter-scientist/galileo-galilei.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Galileo, Surname: Galilei, Born: 1564, Dead: 1642.";
         }
     }
     &__image--4 {
         background-image: url("../image/raster/filter-scientist/marie-curie.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Marie, Surname: Curie, Born: 1867, Dead: 1934.";
         }
     }
     &__image--5 {
         background-image: url("../image/raster/filter-scientist/johannes-kepler.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Johannes, Surname: Kepler, Born: 1571, Dead: 1630.";
         }
     }
     &__image--6 {
         background-image: url("../image/raster/filter-scientist/nicolaus-copernicus.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Nicolaus, Surname: Copernicus, Born: 1473, Dead: 1543.";
         }
     }
     &__image--7 {
         background-image: url("../image/raster/filter-scientist/max-planck.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Max, Surname: Planck, Born: 1858, Dead: 1947.";
         }
     }
     &__image--8 {
         background-image: url("../image/raster/filter-scientist/katharite-blodgett.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Katherine, Surname: Blodgett, Born: 1898, Dead: 1979.";
         }
     }
     &__image--9 {
         background-image: url("../image/raster/filter-scientist/ada-lovelace.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Ada, Surname: Lovelace, Born: 1815, Dead: 1852.";
         }
     }
     &__image--10 {
         background-image: url("../image/raster/filter-scientist/sarah-e-goode.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Sarah E., Surname: Goode, Born: 1855, Dead: 1905.";
         }
     }
     &__image--11 {
         background-image: url("../image/raster/filter-scientist/lise-meitner.jpeg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Lise, Surname: Meitner, Born: 1878, Dead: 1968.";
         }
     }
     &__image--12 {
         background-image: url("../image/raster/filter-scientist/hanna-hammarström.jpg");
         &:hover::after {
-            content: "1234";
+            content: "Name: Hanna, Surname: Hammarström, Born: 1829, Dead: 1909.";
         }
     }
     &__filter-option-group {
@@ -200,7 +220,15 @@
     }
     &__active-scientist {
         opacity: 1;
-        box-shadow: 0px 0px 20px 0px $green;
+        box-shadow: 0px 0px 0px 5px $bright-green;
+    }
+    &__active-scientist-red {
+        opacity: 1;
+        box-shadow: 0px 0px 0px 5px $red;
+    }
+    &__remove-scientist {
+        opacity: 0;
+        pointer-events: none;
     }
     &__active-btn {
         background: $medium-grey;
