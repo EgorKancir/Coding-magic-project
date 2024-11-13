@@ -44,7 +44,7 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   color: black;
 }
 
-.main__title-box, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .timer-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .header__main-group, .greeting-modal__close-btn, .greeting-modal__main-group {
+.main__title-box, .subscribe-modal__close-btn, .subscribe-modal, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .timer-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .header__main-group, .greeting-modal__close-btn, .greeting-modal__main-group {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +167,7 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: block;
+  display: block !important;
 }
 
 .open-modal__activ-backdrop {
@@ -177,7 +177,7 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   height: 100%;
   background-color: #7A7A7A;
   opacity: 0.6;
-  display: block;
+  display: block !important;
 }
 
 .header {
@@ -1055,6 +1055,142 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
 }
 .filter-scientists__image--default {
   opacity: 1;
+}
+
+.footer {
+  width: 100%;
+  background-color: #FFF;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 61px 0 59px 0;
+  gap: 185px;
+}
+.footer__logo-link {
+  margin-top: 14px;
+}
+.footer__logo-image {
+  width: 165px;
+  height: 70px;
+  flex-shrink: 0;
+}
+.footer__info-group {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-right: 2px;
+}
+.footer__info-option:hover {
+  transform: translateX(10px);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.footer__info-link {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  cursor: pointer;
+}
+.footer__form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 36px;
+}
+.footer__input-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 36px;
+}
+.footer__form-input {
+  display: inline-flex;
+  padding: 10px 80px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #D7D7D7;
+  color: #7E7E7E;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__form-submit {
+  padding: 10px;
+  border-radius: 20px;
+  background: #000;
+  color: #FFF;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__form-submit:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.footer__form-description {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribe-modal {
+  width: 463px;
+  height: 245px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #FFF;
+  padding: 83px 0 138px 0;
+  border: 1px solid #000;
+  background-image: url("../image/raster/modal/sword@1x.png"), url("../image/raster/modal/puzzle@1x.png"), url("../image/raster/modal/game-development@1x.png"), url("../image/raster/modal/tic-tac-toe@1x.png");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: top 69px left 43px, bottom 70px left 87px, top 69px right 42px, bottom 70px right 86px;
+  display: none;
+}
+.subscribe-modal__close-btn {
+  position: absolute;
+  background: inherit;
+  border: none;
+  top: 30px;
+  right: 30px;
+  flex-shrink: 0;
+  stroke: #000;
+}
+.subscribe-modal__close-btn:hover {
+  stroke: #7A7A7A;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+.subscribe-modal__close-btn-svg {
+  width: 15px;
+  height: 15px;
+}
+.subscribe-modal__title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .main__title {
