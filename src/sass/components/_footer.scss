@@ -1,10 +1,11 @@
 .footer {
     width: 100%;
-    background-color: $white;
+    background-color: var(--game-section-bg);
+    position: relative;
+    transition: all 0.8s ease-in-out;
     &__content {
         @include flex(space-between, start);
-        padding: 61px 0 59px 0;
-        gap: 185px;
+        padding: 61px 15px 59px 15px !important;
     }
     &__logo-link {
         margin-top: 14px;
@@ -27,7 +28,7 @@
         }
     }
     &__info-link {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -50,8 +51,8 @@
         align-items: flex-start;
         gap: 10px;
         border-radius: 20px;
-        background: $grey-white;
-        color: $dark-grey;
+        background: var(--grey-white);
+        color: var(--dark-grey);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -61,8 +62,8 @@
     &__form-submit {
         padding: 10px;
         border-radius: 20px;
-        background: $black;
-        color: $white;
+        background-color: var(--black-bg);
+        color: var(--white-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -75,53 +76,9 @@
         }
     }
     &__form-description {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 6px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-}
-
-.subscribe-modal {
-    width: 463px;
-    height: 245px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: $white;
-    padding: 83px 0 138px 0;
-    border: 1px solid $black;
-    @extend %position-center;
-    background-image: url("../image/raster/modal/sword@1x.png"), url("../image/raster/modal/puzzle@1x.png"), url("../image/raster/modal/game-development@1x.png"), url("../image/raster/modal/tic-tac-toe@1x.png");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: top 69px left 43px, bottom 70px left 87px, top 69px right 42px, bottom 70px right 86px;
-    display: none;
-    &__close-btn {
-        position: absolute;
-        background: inherit;
-        border: none;
-        @extend %position-center;
-        top: 30px;
-        right: 30px;
-        flex-shrink: 0;
-        stroke: $black;
-        &:hover {
-            stroke: $grey;
-            transform: scale(1.1);
-            transition: all 0.2s ease;
-        }
-    }
-    &__close-btn-svg {
-        width: 15px;
-        height: 15px;
-    }
-    &__title {
-        color: $black;
-        text-align: center;
-        font-family: Inter;
-        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

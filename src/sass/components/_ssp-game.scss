@@ -12,7 +12,7 @@
         gap: 8px;
     }
     &__result-consol-title, &__result-consol-item {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -35,7 +35,7 @@
         @extend %position-center;
         padding: 10px;
         border-radius: 20px;
-        background: $black;
+        background-color: var(--ssp-game-bg);
         cursor: pointer;
         &:hover {
             opacity: 0.8;
@@ -50,11 +50,11 @@
     &__input {
         display: none;
         &:checked + .ssp-game__label {
-            background: $blue-original;
+            background: var(--blue-original);
         }
     }
     &__result-text {
-        color: $green;
+        color: var(--green);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -65,9 +65,9 @@
         outline: none;
         border: none;
         border-radius: 20px;
-        background: $black;
+        background-color: var(--black-bg);
         padding: 10px 20px;
-        color: $white;
+        color: var(--white-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;

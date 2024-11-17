@@ -15,13 +15,13 @@
         padding: 10px 20px;
         align-items: flex-start;
         border-radius: 20px;
-        background: $grey-white;
+        background: var(--grey-white);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     }
     &__input {
         width: 95px;
         background: inherit;
-        color: $dark-grey;
+        color: var(--dark-grey);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -30,7 +30,7 @@
         text-align: start;
     }
     &__resulat {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;

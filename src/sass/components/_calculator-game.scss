@@ -13,13 +13,13 @@
         padding: 10px 20px;
         align-items: flex-start;
         border-radius: 20px;
-        background: $grey-white;
+        background: var(--grey-white);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
     }
     &__number-input {
         width: 95px;
         background: inherit;
-        color: $dark-grey;
+        color: var(--dark-grey);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -38,7 +38,7 @@
     &__sign {
         display: none;
         &:checked + .calculator-game__sign-label {
-            background: $blue-original;
+            background: var(--blue-original);
         }
     }
     &__sign-label {
@@ -46,9 +46,9 @@
         padding: 5px 10px;
         align-items: flex-start;
         border-radius: 20px;
-        background: $black;
+        background-color: var(--black-bg);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        color: $white;
+        color: var(--white-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -66,9 +66,9 @@
         padding: 5px 10px;
         align-items: flex-start;
         border-radius: 20px;
-        background: $black;
+        background-color: var(--black-bg);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        color: $white;
+        color: var(--white-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -86,9 +86,9 @@
         padding: 10px 20px;
         align-items: flex-start;
         border-radius: 20px;
-        background: $grey-white;
+        background: var(--grey-white);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        color: $dark-grey;
+        color: var(--dark-grey);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;

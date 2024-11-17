@@ -11,6 +11,7 @@ subscribeBtn.addEventListener("click", () => {
         console.log(`Email нового користувача "${newUserEmail}".`);
         modal.classList.add('open-modal');
         backdrop.classList.add('open-modal__activ-backdrop');
+        document.body.style.overflow = 'hidden';
     } else {
         alert('Введіть текст довший 1 літери');
         return
@@ -19,4 +20,5 @@ subscribeBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     modal.classList.remove('open-modal');
     backdrop.classList.remove('open-modal__activ-backdrop');
+    document.body.style.overflow = '';
 })

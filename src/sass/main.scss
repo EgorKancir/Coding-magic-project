@@ -1,9 +1,31 @@
 * {
     cursor: url("../image/vector/football-game/cursor.svg"), default;
+    scroll-behavior: smooth;
 }
+
+@import 
+'./utils/mixins',
+'./utils/placeholders',
+'./utils/variable';
+@import 
+'./components/greeting-modal',
+'./components/header',
+'./components/game-section',
+'./components/checking-year',
+'./components/guess-number',
+'./components/ssp-game',
+'./components/calculator-game',
+'./components/timer-game',
+'./components/dino-game',
+'./components/football-game',
+'./components/max-number-game',
+'./components/team-slider',
+'./components/filter-scientists',
+'./components/subscribe-modal',
+'./components/footer';
+
 body {
-    background: #EEE;
-    color: rgb(103, 58, 145);
+    background: var(--body-bg);
     background-image: url("../image/raster/background-image@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,32 +55,13 @@ input, textarea, button {
     &:focus-visible {
         outline: none;
         border: none;
-        color: black;
+        color: var(--text-input);
     }
 }
-@import 
-'./utils/mixins',
-'./utils/placeholders',
-'./utils/variable';
-@import 
-'./components/greeting-modal',
-'./components/header',
-'./components/game-section',
-'./components/checking-year',
-'./components/guess-number',
-'./components/ssp-game',
-'./components/calculator-game',
-'./components/timer-game',
-'./components/dino-game',
-'./components/football-game',
-'./components/max-number-game',
-'./components/team-slider',
-'./components/filter-scientists',
-'./components/footer';
 .main {
     @extend %position-center-column;
     &__title {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 24px;
         font-style: normal;
@@ -67,27 +70,28 @@ input, textarea, button {
     }
     &__title-box {
         padding: 36px 0;
-        background-color: $white;
+        background-color: var(--game-section-bg);
         @extend %position-center;
+        transition: all 0.8s ease-in-out;
     }
 }
-@media (max-width: 1200px) {
-    .container {
-        width: 734px;
-    }
-}
-@media (max-width: 768px) {
-    .container {
-        width: 480px;
-    }
-}
-@media (max-width: 480px) {
-    .container {
-        width: 365px;
-    }
-}
-@media (max-width: 365px) {
-    .container {
-        width: 320px;
-    }
-}
+// @media (max-width: 1200px) {
+//     .container {
+//         width: 734px;
+//     }
+// }
+// @media (max-width: 768px) {
+//     .container {
+//         width: 480px;
+//     }
+// }
+// @media (max-width: 480px) {
+//     .container {
+//         width: 365px;
+//     }
+// }
+// @media (max-width: 365px) {
+//     .container {
+//         width: 320px;
+//     }
+// }

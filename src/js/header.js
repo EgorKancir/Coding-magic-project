@@ -9,11 +9,13 @@ checkBox.addEventListener("change", () => {
         lightType.classList.add("inactive");
         ball.classList.add("move");
         darkType.classList.remove("inactive");
-        body.style.backgroundColor = 'rgb(103, 58, 145)';
+        body.classList.remove('theme-light');
+        body.classList.add('theme-dark');
     } else {
         darkType.classList.add("inactive");
         lightType.classList.remove("inactive");
         ball.classList.remove("move");
-        body.style.backgroundColor = '#EEE';
+        body.classList.remove('theme-dark');
+        body.classList.add('theme-light');
     }
 })

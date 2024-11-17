@@ -2,8 +2,8 @@
     width: 100%;
     height: 220px;
     border-radius: 37px;
-    border: 2px solid $black;
-    background: $bright-green;
+    border: 2px solid var(--black);
+    background: var(--bright-green);
     position: relative;
     &__padding {
         padding: 0 185px 36px 185px;

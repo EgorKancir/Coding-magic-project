@@ -160,7 +160,6 @@ function abcScientist(positionArr, imageArr) {
         imageArr[i].classList.remove(`filter-scientists__image--${i+1}`);
         imageArr[i].classList.add(`filter-scientists__image--${positionArr[i]}`)
         imageArr[i].classList.add('filter-scientists__image--default');
-
     }
 }
 leftBtnArr[1].addEventListener('click', () => {
@@ -241,7 +240,10 @@ rightBtnArr[1].addEventListener('click', () => {
 });
 // 7
 // 8
-function nameFirstLetter(arr, letter) {
+function nameFirstLetter(arr, imageArr, letter) {
+    for (let i = 0; i < imageArr.length; i++) {
+        imageArr[i].classList.add('filter-scientists__image--default');
+    }
     for (let i = 0; i < arr.length; i++) {
         let nameArr = arr[i].name.split("");
         if (nameArr[0] === letter) {
@@ -252,7 +254,7 @@ function nameFirstLetter(arr, letter) {
 rightBtnArr[2].addEventListener('click', () => {
     removeClass();
     let firstLetter = 'A';
-    nameFirstLetter(scientists, firstLetter);
+    nameFirstLetter(scientists, scientistsImageArr, firstLetter);
     rightBtnArr[2].classList.add('filter-scientists__active-btn');
 });
 // 8

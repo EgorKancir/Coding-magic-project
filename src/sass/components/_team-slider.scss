@@ -53,11 +53,11 @@
         height: 150px;
         flex-shrink: 0;
         border-radius: 20px;
-        background: $medium-grey;
+        background: var(--medium-grey);
         object-fit: cover;
     }
     &__user-name {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 14px;
         font-style: normal;
@@ -65,7 +65,7 @@
         line-height: normal;
     }
     &__student-info {
-        color: $black;
+        color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -81,17 +81,17 @@
         width: 18px;
         height: 3px;
         border-radius: 10px;
-        background-color: $medium-grey;
+        background-color: var(--medium-grey);
         cursor: pointer;
         &:hover {
             transform: scaleX(1.1);
-            background-color: $activ-grey;
+            background-color: var(--active-grey);
             transition: all 0.3s ease;
         }
     }
     &__pagination-line--active {
         transition: all 0.3s ease;
         width: 30px;
-        background-color: $activ-grey;
+        background-color: var(--active-grey);
     }
 }

@@ -2,7 +2,7 @@
     width: 100%;
     @include flex(space-between, center);
     &__result {
-        color: $green;
+        color: var(--green);
         text-align: right;
         font-family: "Montserrat Alternates";
         font-size: 12px;
@@ -18,7 +18,7 @@
     width: 215px;
     height: 35px;
     border-radius: 20px;
-    background: $grey-white;
+    background: var(--grey-white);
     box-shadow: 3px 3px gray;
     position: relative;
     overflow-x: hidden;
@@ -34,7 +34,7 @@
         height: 35px;
         background: inherit;
         padding: 10px;
-        color: $dark-grey;
+        color: var(--dark-grey);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -56,17 +56,17 @@
         width: 35px;
         height: 35px;
         @extend %position-center;
-        background: $black;
+        background-color: var(--black-bg);
         &:hover {
-            background: $white;
+            background-color: var(--white-bg);
             .checking-form__submit-svg {
-                stroke: $black;
+                stroke: var(--black);
             }
         }
     }
     &__submit-svg {
         width: 15px;
         height: 15px;
-        stroke: $white;
+        stroke: var(--white);
     }
 }

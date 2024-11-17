@@ -18,7 +18,7 @@
         height: 100px;
         flex-shrink: 0;
         border-radius: 20px;
-        background: $medium-grey;
+        background: var(--medium-grey);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -33,9 +33,9 @@
                 height: 40px;
                 border-radius: 20px;
                 @extend %position-center;
-                color: $white;
+                color: var(--white-text);
                 font-family: "Montserrat Alternates";
-                background-color: $black;
+                background-color: var(--black-bg);
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -96,9 +96,9 @@
             height: 40px;
             border-radius: 20px;
             @extend %position-center;
-            color: $white;
+            color: var(--white-text);
             font-family: "Montserrat Alternates";
-            background-color: $black;
+            background-color: var(--black-bg);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -202,9 +202,9 @@
     &__filter-option-btn {
         padding: 10px 20px;
         border-radius: 20px;
-        background: $black;
+        background-color: var(--filter-btn-bg);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-        color: $white;
+        color: var(--filter-btn-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
@@ -213,26 +213,26 @@
         text-align: start;
         cursor: pointer;
         &:hover {
-            background: $lite-gey;
-            color: $black;
+            background: var(--lite-grey);
+            color: var(--filter-btn-text-hover);
             transition: all 0.3s ease-in-out;
         }
     }
     &__active-scientist {
         opacity: 1;
-        box-shadow: 0px 0px 0px 5px $bright-green;
+        box-shadow: 0px 0px 0px 5px var(--bright-green);
     }
     &__active-scientist-red {
         opacity: 1;
-        box-shadow: 0px 0px 0px 5px $red;
+        box-shadow: 0px 0px 0px 5px  var(--red);
     }
     &__remove-scientist {
-        opacity: 0;
+        opacity: 0 !important;
         pointer-events: none;
     }
     &__active-btn {
-        background: $medium-grey;
-        color: $black;
+        background: var(--medium-grey);
+        color: var(--active-btn-text);
     }
     &__image--default {
         opacity: 1;
