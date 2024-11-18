@@ -3,7 +3,6 @@
     justify-content: $j-content;
     align-items: $align;
 }
-
 @mixin flex-j-content($flex, $js-content) {
     display: $flex;
     justify-content: $js-content;

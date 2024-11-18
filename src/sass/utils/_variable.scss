@@ -1,13 +1,12 @@
 // Day
-
 $white: #FFF;
 $white-bg: #FFF;
 $white-text: #FFF;
-$white-ball-bg: #FFF; //
+$white-ball-bg: #FFF; 
 $black: #000;
 $black-bg: #000;
 $black-text: #000;
-$black-ball-br: #000; //
+$black-ball-br: #000; 
 $red: red;
 $grey: #7A7A7A;
 $dark-grey: #7E7E7E;
@@ -18,7 +17,6 @@ $medium-grey: #D9D9D9;
 $green: #039900;
 $bright-green: #5ABB58;
 $blue-original: blue;
-//
 $body-bg: #EEE;
 $game-section-bg: #FFF;
 $text-input: #000;
@@ -26,22 +24,19 @@ $ssp-game-bg: #000;
 $filter-btn-text: #FFF;
 $filter-btn-bg: #000;
 $filter-btn-text-hover: #000;
-
 $modal-bg: #FFF;
 $modal-text: #000;
-
 $standart-btn-bg: #000;
 $standart-btn-text: #FFF;
-
 .theme-light {
     --white: #{$white};
     --white-bg: #{$white-bg};
     --white-text: #{$white-text}; 
-    --white-ball-bg: #{$white-ball-bg}; //
+    --white-ball-bg: #{$white-ball-bg}; 
     --black: #{$black}; 
     --black-bg: #{$black-bg}; 
     --black-text: #{$black-text}; 
-    --black-ball-br: #{$black-ball-br}; //
+    --black-ball-br: #{$black-ball-br}; 
     --red: #{$red}; 
     --grey: #{$grey}; 
     --dark-grey: #{$dark-grey}; 
@@ -52,7 +47,6 @@ $standart-btn-text: #FFF;
     --green: #{$green}; 
     --bright-green: #{$bright-green}; 
     --blue-original: #{$blue-original};
-    //
     --body-bg: #{$body-bg};
     --game-section-bg: #{$game-section-bg};
     --text-input: #{$text-input};
@@ -60,25 +54,21 @@ $standart-btn-text: #FFF;
     --filter-btn-text: #{$filter-btn-text};
     --filter-btn-bg: #{$filter-btn-bg};
     --filter-btn-text-hover: #{$filter-btn-text-hover};
-
     --modal-bg: #{$modal-bg};
     --modal-text: #{$modal-text};
-
     --standart-btn-bg: #{$standart-btn-bg};
     --standart-btn-text: #{$standart-btn-text};
     transition: all 0.8s ease-in-out;
 }
-
 // Nigh
-
 $white--nigh: #000;
 $white-bg--nigh: #000;
 $white-text--nigh: #000;
-$white-ball-bg--nigh: #000; //
+$white-ball-bg--nigh: #000; 
 $black--nigh: #FFF;
 $black-bg--nigh: #FFF;
 $black-text--nigh: #FFF;
-$black-ball-br--nigh: #000; //
+$black-ball-br--nigh: #000;
 $red--nigh: red;
 $grey--nigh: #7A7A7A;
 $dark-grey--nigh: #7E7E7E;
@@ -89,7 +79,6 @@ $medium-grey--nigh: #D9D9D9;
 $green--nigh: #039900;
 $bright-green--nigh: #5ABB58;
 $blue-original--nigh: blue;
-//
 $body-bg--nigh: #4f4f54;
 $game-section-bg--nigh: #34363a;
 $text-input--nigh: #000;
@@ -97,23 +86,19 @@ $ssp-game-bg--nigh: #000;
 $filter-btn-text--nigh: #FFF;
 $filter-btn-bg--nigh: #000;
 $filter-btn-text-hover--nigh: #000;
-
 $modal-bg--nigh: #FFF;
 $modal-text--nigh: #000;
-
-
 $standart-btn-bg--nigh: #000;
 $standart-btn-text--nigh: #FFF;
-
 .theme-dark {
     --white: #{$white--nigh};
     --white-bg: #{$white-bg--nigh};
     --white-text: #{$white-text--nigh}; 
-    --white-ball-bg: #{$white-ball-bg--nigh}; //
+    --white-ball-bg: #{$white-ball-bg--nigh}; 
     --black: #{$black--nigh}; 
     --black-bg: #{$black-bg--nigh}; 
     --black-text: #{$black-text--nigh}; 
-    --black-ball-br: #{$black-ball-br}; //
+    --black-ball-br: #{$black-ball-br}; 
     --red: #{$red--nigh}; 
     --grey: #{$grey--nigh}; 
     --dark-grey: #{$dark-grey--nigh}; 
@@ -124,7 +109,6 @@ $standart-btn-text--nigh: #FFF;
     --green: #{$green--nigh}; 
     --bright-green: #{$bright-green--nigh}; 
     --blue-original: #{$blue-original--nigh};
-    //
     --body-bg: #{$body-bg--nigh};
     --game-section-bg: #{$game-section-bg--nigh};
     --text-input: #{$text-input--nigh};
@@ -132,10 +116,8 @@ $standart-btn-text--nigh: #FFF;
     --filter-btn-text: #{$filter-btn-text--nigh};
     --filter-btn-bg: #{$filter-btn-bg--nigh};
     --filter-btn-text-hover: #{$filter-btn-text-hover--nigh};
-
     --modal-bg: #{$modal-bg--nigh};
     --modal-text: #{$modal-text--nigh};
-
     --standart-btn-bg: #{$standart-btn-bg--nigh};
     --standart-btn-text: #{$standart-btn-text--nigh};
     transition: all 0.8s ease-in-out;
