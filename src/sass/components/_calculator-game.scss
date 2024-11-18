@@ -1,9 +1,7 @@
 .calculator-game {
-    width: 100%;
-    @include flex(space-between, center);
-    &__padding {
-        padding: 0 230px 36px 230px;
-    }
+    width: auto;
+    @include flex(center, center);
+    gap: 38px;
     &__form {
         @extend %position-center;
         gap: 38px;

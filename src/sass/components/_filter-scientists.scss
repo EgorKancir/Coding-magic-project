@@ -1,9 +1,7 @@
 .filter-scientists {
+    width: auto;
     @extend %position-center-column;
     gap: 36px;
-    &__padding {
-        padding: 0 86px 36px 86px;
-    }
     &__image-group {
         display: grid;
         grid-template-columns: repeat(4, 100px);

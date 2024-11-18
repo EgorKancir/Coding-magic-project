@@ -2,14 +2,6 @@
     width: 100%;
     @extend %position-center-column;
     gap: 36px;
-    background-color: var(--game-section-bg);
-    transition: all 0.8s ease-in-out;
-    &__decor-line {
-        width: 536px;
-        height: 1px;
-        flex-shrink: 0;
-        background-color: var(--black-bg);
-    }
     &__title {
         color: var(--black-text);
         font-family: "Montserrat Alternates";

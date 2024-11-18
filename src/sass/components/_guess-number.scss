@@ -1,9 +1,6 @@
 .guess-number {
-    width: 100%;
+    width: 576px;
     @include flex(space-between, center);
-    &__padding {
-        padding: 0 257px 36px 257px;
-    }
     &__result {
         color: var(--green);
         text-align: right;

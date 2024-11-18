@@ -1,13 +1,10 @@
 .ssp-game {
-    width: 100%;
+    width: auto;
     position: relative;
-    &__padding {
-        padding: 0 220px 36px 220px;
-    }
     &__result-consol {
         position: absolute;
         top: 0;
-        right: 0;
+        right: -197px;
         @include flex-dop(center, start, column);
         gap: 8px;
     }

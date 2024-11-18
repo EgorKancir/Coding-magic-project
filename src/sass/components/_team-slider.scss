@@ -1,12 +1,9 @@
 .team-slider {
-    width: 100%;
+    width: 906px;
     height: 249px;
     @extend %position-center-column;
     gap: 20px;
     position: relative;
-    &__padding {
-        padding: 0 92px 36px 92px;
-    }
     &__top {
         @extend %position-center;
     }

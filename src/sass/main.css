@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.main, .filter-scientists, .team-slider__slide-content, .team-slider, .ssp-game__form, .game-section, .greeting-modal__label, .greeting-modal__form, .greeting-modal {
+.main__content, .main, .filter-scientists, .team-slider__slide-content, .team-slider, .ssp-game__form, .game-section, .greeting-modal__label, .greeting-modal__form, .greeting-modal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,14 +355,6 @@
 .game-section {
   width: 100%;
   gap: 36px;
-  background-color: var(--game-section-bg);
-  transition: all 0.8s ease-in-out;
-}
-.game-section__decor-line {
-  width: 536px;
-  height: 1px;
-  flex-shrink: 0;
-  background-color: var(--black-bg);
 }
 .game-section__title {
   color: var(--black-text);
@@ -374,7 +366,7 @@
 }
 
 .checking-year {
-  width: 100%;
+  width: 576px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -387,9 +379,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.checking-year__padding {
-  padding: 0 257px 36px 257px;
 }
 
 .checking-form {
@@ -449,13 +438,10 @@
 }
 
 .guess-number {
-  width: 100%;
+  width: 576px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.guess-number__padding {
-  padding: 0 257px 36px 257px;
 }
 .guess-number__result {
   color: var(--green);
@@ -474,16 +460,13 @@
 }
 
 .ssp-game {
-  width: 100%;
+  width: auto;
   position: relative;
-}
-.ssp-game__padding {
-  padding: 0 220px 36px 220px;
 }
 .ssp-game__result-consol {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -197px;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -560,13 +543,11 @@
 }
 
 .calculator-game {
-  width: 100%;
+  width: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-.calculator-game__padding {
-  padding: 0 230px 36px 230px;
+  gap: 38px;
 }
 .calculator-game__form {
   gap: 38px;
@@ -659,10 +640,8 @@
 }
 
 .timer-game {
+  width: auto;
   gap: 33px;
-}
-.timer-game__padding {
-  padding: 0 230px 36px 230px;
 }
 .timer-game__form {
   width: 150px;
@@ -680,11 +659,13 @@
 }
 
 .dino-game {
-  width: 100%;
+  width: 720px;
   height: 273px;
 }
-.dino-game__padding {
-  padding: 0 185px 36px 185px;
+.dino-game__link {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 .dino-game__link:hover {
   box-shadow: 0px 0px 5px 0px var(--blue-original);
@@ -695,15 +676,12 @@
 }
 
 .football-game {
-  width: 100%;
+  width: 720px;
   height: 220px;
   border-radius: 37px;
   border: 2px solid var(--black);
   background: var(--bright-green);
   position: relative;
-}
-.football-game__padding {
-  padding: 0 185px 36px 185px;
 }
 .football-game__ball {
   position: absolute;
@@ -718,12 +696,9 @@
 }
 
 .max-number-game {
-  width: 100%;
+  width: auto;
   flex-direction: column;
   gap: 36px;
-}
-.max-number-game__padding {
-  padding: 0 270px 36px 270px;
 }
 .max-number-game__form {
   gap: 38px;
@@ -757,13 +732,10 @@
 }
 
 .team-slider {
-  width: 100%;
+  width: 906px;
   height: 249px;
   gap: 20px;
   position: relative;
-}
-.team-slider__padding {
-  padding: 0 92px 36px 92px;
 }
 .team-slider__arrow {
   position: absolute;
@@ -850,10 +822,8 @@
 }
 
 .filter-scientists {
+  width: auto;
   gap: 36px;
-}
-.filter-scientists__padding {
-  padding: 0 86px 36px 86px;
 }
 .filter-scientists__image-group {
   display: grid;
@@ -1278,6 +1248,13 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   color: var(--text-input);
 }
 
+.main__content {
+  width: 100%;
+  padding: 36px 0;
+  gap: 36px;
+  background-color: var(--game-section-bg);
+  transition: all 0.8s ease-in-out;
+}
 .main__title {
   color: var(--black-text);
   font-family: "Montserrat Alternates";
@@ -1287,7 +1264,12 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   line-height: normal;
 }
 .main__title-box {
-  padding: 36px 0;
-  background-color: var(--game-section-bg);
-  transition: all 0.8s ease-in-out;
+  width: 100%;
+}
+
+.decor-line {
+  width: 536px;
+  height: 1px;
+  flex-shrink: 0;
+  background-color: var(--black-bg);
 }/*# sourceMappingURL=main.css.map */

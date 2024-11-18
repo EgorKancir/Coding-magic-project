@@ -1,9 +1,7 @@
 .timer-game {
+    width: auto;
     @extend %position-center;
     gap: 33px;
-    &__padding {
-        padding: 0 230px 36px 230px;
-    }
     &__form {
         width: 150px;
     }

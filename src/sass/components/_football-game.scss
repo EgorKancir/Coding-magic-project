@@ -1,13 +1,10 @@
 .football-game {
-    width: 100%;
+    width: 720px;
     height: 220px;
     border-radius: 37px;
     border: 2px solid var(--black);
     background: var(--bright-green);
     position: relative;
-    &__padding {
-        padding: 0 185px 36px 185px;
-    }
     &__ball {
         position: absolute;
         left: 50%;

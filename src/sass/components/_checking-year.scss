@@ -1,5 +1,5 @@
 .checking-year {
-    width: 100%;
+    width: 576px;
     @include flex(space-between, center);
     &__result {
         color: var(--green);
@@ -9,9 +9,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-    }
-    &__padding {
-        padding: 0 257px 36px 257px;
     }
 }
 .checking-form {

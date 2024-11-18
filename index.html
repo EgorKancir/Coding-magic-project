@@ -70,257 +70,259 @@
       </div>
     </header>
     <main class="main">
-        <div class="container main__content">
-          <div class="main__title-box">
-            <h1 class="main__title">Популярні інетрактивні ігри</h1>
-          </div>
-          <section class="game-section checking-year__padding">
-            <hr class="game-section__decor-line">
-              <h3 class="game-section__title">Перевір в який рік ти народився</h3>
-              <div class="checking-year">
-                <form class="checking-form">
-                  <label class="checking-form__label" for="input-year">
-                    <input class="checking-form__input" type="text" name="year" id="input-year" placeholder="Введіть рік народження">
+        <div class="container">
+          <div class="main__content">
+            <div class="main__title-box">
+              <h1 class="main__title">Популярні інетрактивні ігри</h1>
+            </div>
+            <hr class="decor-line">
+            <section class="game-section">
+                <h3 class="game-section__title">Перевір в який рік ти народився</h3>
+                <div class="checking-year">
+                  <form class="checking-form">
+                    <label class="checking-form__label" for="input-year">
+                      <input class="checking-form__input" type="text" name="year" id="input-year" placeholder="Введіть рік народження">
+                    </label>
+                    <button class="checking-form__submit" type="button" id="check-year-btn">
+                      <svg class="checking-form__submit-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="inherit" stroke-width="2"/>
+                        <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
+                      </svg>
+                    </button>
+                  </form>
+                  <h4 class="checking-year__result">???</h4>
+                </div>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Вгадай число, яке загадав комп’ютер</h3>
+              <div class="guess-number">
+                <form class="checking-form guess-number__form">
+                  <label class="checking-form__label" for="user-number">
+                    <input class="checking-form__input guess-number__input" type="text" name="number" id="user-number" placeholder="Введіть число">
                   </label>
-                  <button class="checking-form__submit" type="button" id="check-year-btn">
+                  <button class="checking-form__submit" type="button" id="check-number-btn">
                     <svg class="checking-form__submit-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="inherit" stroke-width="2"/>
                       <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
                     </svg>
                   </button>
                 </form>
-                <h4 class="checking-year__result">???</h4>
+                <h4 class="guess-number__result">Введи число від 1 до 5</h4>
               </div>
-          </section>
-          <section class="game-section guess-number__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Вгадай число, яке загадав комп’ютер</h3>
-            <div class="guess-number">
-              <form class="checking-form guess-number__form">
-                <label class="checking-form__label" for="user-number">
-                  <input class="checking-form__input guess-number__input" type="text" name="number" id="user-number" placeholder="Введіть число">
-                </label>
-                <button class="checking-form__submit" type="button" id="check-number-btn">
-                  <svg class="checking-form__submit-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="inherit" stroke-width="2"/>
-                    <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
-                  </svg>
-                </button>
-              </form>
-              <h4 class="guess-number__result">Введи число від 1 до 5</h4>
-            </div>
-          </section>
-          <section class="game-section ssp-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Камінь - ножиці - папір</h3>
-            <div class="ssp-game">
-              <div class="ssp-game__result-consol">
-                <h4 class="ssp-game__result-consol-title">Рахунок:</h4>
-                <ul class="ssp-game__result-consol-list">
-                  <li class="ssp-game__result-consol-item" id="ssp-game__result-computer">Комп'ютер - 0</li>
-                  <li class="ssp-game__result-consol-item" id="ssp-game__result-user">Ви - 0</li>
-                </ul>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Камінь - ножиці - папір</h3>
+              <div class="ssp-game">
+                <div class="ssp-game__result-consol">
+                  <h4 class="ssp-game__result-consol-title">Рахунок:</h4>
+                  <ul class="ssp-game__result-consol-list">
+                    <li class="ssp-game__result-consol-item" id="ssp-game__result-computer">Комп'ютер - 0</li>
+                    <li class="ssp-game__result-consol-item" id="ssp-game__result-user">Ви - 0</li>
+                  </ul>
+                </div>
+                <form class="ssp-game__form">
+                  <div class="ssp-game__game-consol">
+                    <input class="ssp-game__input" type="radio" id="game-stone" name="ssp-game" value="stone">
+                    <label class="ssp-game__label" for="game-stone">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/stone.svg" alt="Stone">
+                    </label>
+                    <input class="ssp-game__input" type="radio" id="game-scissors" name="ssp-game" value="scissors">
+                    <label class="ssp-game__label" for="game-scissors">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/scissors.svg" alt="Scissors">
+                    </label>
+                    <input class="ssp-game__input" type="radio" id="game-paper" name="ssp-game" value="paper">
+                    <label class="ssp-game__label" for="game-paper">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/paper.svg" alt="Paper">
+                    </label>
+                  </div>
+                  <h3 class="ssp-game__result-text">???</h3>
+                  <button class="ssp-game__btn" type="button">Варіант комп’ютера</button>
+                </form>
               </div>
-              <form class="ssp-game__form">
-                <div class="ssp-game__game-consol">
-                  <input class="ssp-game__input" type="radio" id="game-stone" name="ssp-game" value="stone">
-                  <label class="ssp-game__label" for="game-stone">
-                    <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/stone.svg" alt="Stone">
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Калькулятор</h3>
+              <div class="calculator-game">
+                <form class="calculator-game__form">
+                  <label class="calculator-game__number-label" for="calculator-first-number">
+                    <input class="calculator-game__number-input" type="text" id="calculator-first-number" name="first-number" placeholder="Введіть число">
                   </label>
-                  <input class="ssp-game__input" type="radio" id="game-scissors" name="ssp-game" value="scissors">
-                  <label class="ssp-game__label" for="game-scissors">
-                    <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/scissors.svg" alt="Scissors">
+                  <div class="calculator-game__signs-group">
+                    <input class="calculator-game__sign" type="radio" id="calculator-plus-sign" name="calculator-sign" value="+">
+                    <label class="calculator-game__sign-label" for="calculator-plus-sign">+</label>
+                    <input class="calculator-game__sign" type="radio" id="calculator-multiplication-sign" name="calculator-sign" value="*">
+                    <label class="calculator-game__sign-label" for="calculator-multiplication-sign">*</label>
+                    <input class="calculator-game__sign" type="radio" id="calculator-minus-sign" name="calculator-sign" value="-">
+                    <label class="calculator-game__sign-label" for="calculator-minus-sign">-</label>
+                    <input class="calculator-game__sign" type="radio" id="calculator-division-sign" name="calculator-sign" value="/">
+                    <label class="calculator-game__sign-label" for="calculator-division-sign">/</label>
+                  </div>
+                  <label class="calculator-game__number-label" for="calculator-second-number">
+                    <input class="calculator-game__number-input" type="text" id="calculator-second-number" name="second-number" placeholder="Введіть число">
                   </label>
-                  <input class="ssp-game__input" type="radio" id="game-paper" name="ssp-game" value="paper">
-                  <label class="ssp-game__label" for="game-paper">
-                    <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/paper.svg" alt="Paper">
+                  <button class="calculator-game__decision-btn" type="button" id="calculator-decision" name="calculator-decision">=</button>
+                </form>
+                <h3 class="calculator-game__resulat">Результат</h3>
+              </div>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Калькулятор часу</h3>
+              <div class="timer-game">
+                <form class="checking-form timer-game__form">
+                  <label class="checking-form__label" for="timer-user-date">
+                    <input class="checking-form__input timer-game__input" type="text" name="date" id="timer-user-date" placeholder="Введіть число">
                   </label>
-                </div>
-                <h3 class="ssp-game__result-text">???</h3>
-                <button class="ssp-game__btn" type="button">Варіант комп’ютера</button>
-              </form>
-            </div>
-          </section>
-          <section class="game-section calculator-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Калькулятор</h3>
-            <div class="calculator-game">
-              <form class="calculator-game__form">
-                <label class="calculator-game__number-label" for="calculator-first-number">
-                  <input class="calculator-game__number-input" type="text" id="calculator-first-number" name="first-number" placeholder="Введіть число">
-                </label>
-                <div class="calculator-game__signs-group">
-                  <input class="calculator-game__sign" type="radio" id="calculator-plus-sign" name="calculator-sign" value="+">
-                  <label class="calculator-game__sign-label" for="calculator-plus-sign">+</label>
-                  <input class="calculator-game__sign" type="radio" id="calculator-multiplication-sign" name="calculator-sign" value="*">
-                  <label class="calculator-game__sign-label" for="calculator-multiplication-sign">*</label>
-                  <input class="calculator-game__sign" type="radio" id="calculator-minus-sign" name="calculator-sign" value="-">
-                  <label class="calculator-game__sign-label" for="calculator-minus-sign">-</label>
-                  <input class="calculator-game__sign" type="radio" id="calculator-division-sign" name="calculator-sign" value="/">
-                  <label class="calculator-game__sign-label" for="calculator-division-sign">/</label>
-                </div>
-                <label class="calculator-game__number-label" for="calculator-second-number">
-                  <input class="calculator-game__number-input" type="text" id="calculator-second-number" name="second-number" placeholder="Введіть число">
-                </label>
-                <button class="calculator-game__decision-btn" type="button" id="calculator-decision" name="calculator-decision">=</button>
-              </form>
-              <h3 class="calculator-game__resulat">Результат</h3>
-            </div>
-          </section>
-          <section class="game-section timer-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Калькулятор часу</h3>
-            <div class="timer-game">
-              <form class="checking-form timer-game__form">
-                <label class="checking-form__label" for="timer-user-date">
-                  <input class="checking-form__input timer-game__input" type="text" name="date" id="timer-user-date" placeholder="Введіть число">
-                </label>
-                <button class="checking-form__submit" type="button" id="timer-save-date-btn">
-                  <svg class="checking-form__submit-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="inherit" stroke-width="2"/>
-                    <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
-                  </svg>
-                </button>
-              </form>
-              <svg class="timer-game__decor-line" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
-                <path d="M0 1H100" stroke="black" stroke-dasharray="2 2"/>
-              </svg>
-              <h4 class="timer-game__result">YYYY-MM-DDTHH:MM</h4>
-            </div>
-          </section>
-          <section class="game-section dino-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Google динозавр</h3>
-            <div class="dino-game">
-              <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
-                <img class="dino-game__image" src="./src/image/raster/dino-game/dino-image@1x.png" alt="Dino">
-              </a>
-            </div>
-          </section>
-          <section class="game-section football-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Футбол</h3>
-            <div class="football-game">
-              <div class="football-game__ball"></div>
-            </div>
-          </section>
-          <section class="game-section max-number-game__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Введіть 3 числа</h3>
-            <div class="max-number-game">
-              <form class="max-number-game__form">
-                <label class="max-number-game__label" for="max-number-game-first">
-                  <input class="max-number-game__input" type="text" id="max-number-game-first" name="first-max-number" placeholder="Введіть число">
-                </label>
-                <label class="max-number-game__label" for="max-number-game-second">
-                  <input class="max-number-game__input" type="text" id="max-number-game-second" name="second-max-number" placeholder="Введіть число">
-                </label>
-                <label class="max-number-game__label" for="max-number-game-third">
-                  <input class="max-number-game__input" type="text" id="max-number-game-third" name="third-max-number" placeholder="Введіть число">
-                </label>
-              </form>
-              <h3 class="max-number-game__resulat">Найбільше число, яке ви ввели - (число)</h3>
-            </div>
-          </section>
-          <section class="game-section team-slider__padding" id="our-team">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Наша команда</h3>
-            <div class="team-slider">
-              <div class="team-slider__top">
-                <img class="team-slider__arrow team-slider__left-arrow" src="./src/image/vector/team-slider/left-arrow.svg" alt="Arrow-left">
-                <div class="team-slider__main-slider">
-                  <div class="team-slider__student-slide team-slider__student-slide--block">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-1.jpg" alt="Student1">
-                      <h3 class="team-slider__user-name"> Марія Ковальчук</h3>
-                      <p class="team-slider__student-info">Розробила сторінку з адаптивним дизайном для блогу.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-2.jpg" alt="Student2">
-                      <h3 class="team-slider__user-name">Олена Савченко</h3>
-                      <p class="team-slider__student-info">Створила форму реєстрації з валідацією на JavaScript.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-3.jpg" alt="Student3">
-                      <h3 class="team-slider__user-name">Дмитро Левченко</h3>
-                      <p class="team-slider__student-info">Реалізував інтерактивне меню для вебсайту на HTML і CSS.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-4.jpg" alt="Student4">
-                      <h3 class="team-slider__user-name">Іван Гордієнко</h3>
-                      <p class="team-slider__student-info">Зробив динамічну галерею зображень на JavaScript.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-5.jpg" alt="Student5">
-                      <h3 class="team-slider__user-name">Анастасія Романюк</h3>
-                      <p class="team-slider__student-info">Створила адаптивну сторінку з CSS Flexbox та Grid.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-6.jpg" alt="Student6">
-                      <h3 class="team-slider__user-name">Олександр Ковтун</h3>
-                      <p class="team-slider__student-info">Зробив калькулятор для вебсайту, використовуючи JavaScript.</p>
-                    </div>
-                  </div>
-                  <div class="team-slider__student-slide">
-                    <div class="team-slider__slide-content">
-                      <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-7.jpg" alt="Student7">
-                      <h3 class="team-slider__user-name">Катерина Сидоренко</h3>
-                      <p class="team-slider__student-info">Реалізувала простий веб-додаток для нотаток з локальним збереженням даних.</p>
-                    </div>
-                  </div>
-                </div>
-                <img class="team-slider__arrow team-slider__right-arrow" src="./src/image/vector/team-slider/right-arrow.svg" alt="Arrow-right">
+                  <button class="checking-form__submit" type="button" id="timer-save-date-btn">
+                    <svg class="checking-form__submit-svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <circle cx="6.52174" cy="6.52174" r="5.52174" stroke="inherit" stroke-width="2"/>
+                      <path d="M14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L14.2929 15.7071ZM11.468 10.0538L10.7609 9.34665L9.34666 10.7609L10.0538 11.468L11.468 10.0538ZM15.7071 14.2929L11.468 10.0538L10.0538 11.468L14.2929 15.7071L15.7071 14.2929Z" fill="white"/>
+                    </svg>
+                  </button>
+                </form>
+                <svg class="timer-game__decor-line" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
+                  <path d="M0 1H100" stroke="black" stroke-dasharray="2 2"/>
+                </svg>
+                <h4 class="timer-game__result">YYYY-MM-DDTHH:MM</h4>
               </div>
-              <div class="team-slider__bottom" id="team-slider-bottom"></div>
-            </div>
-          </section>
-          <section class="game-section filter-scientists__padding">
-            <hr class="game-section__decor-line">
-            <h3 class="game-section__title">Обери вченого/их</h3>
-            <div class="filter-scientists">
-              <div class="filter-scientists__image-group">
-                <div class="filter-scientists__image filter-scientists__image--1"></div>
-                <div class="filter-scientists__image filter-scientists__image--2"></div>
-                <div class="filter-scientists__image filter-scientists__image--3"></div>
-                <div class="filter-scientists__image filter-scientists__image--4"></div>
-                <div class="filter-scientists__image filter-scientists__image--5"></div>
-                <div class="filter-scientists__image filter-scientists__image--6"></div>
-                <div class="filter-scientists__image filter-scientists__image--7"></div>
-                <div class="filter-scientists__image filter-scientists__image--8"></div>
-                <div class="filter-scientists__image filter-scientists__image--9"></div>
-                <div class="filter-scientists__image filter-scientists__image--10"></div>
-                <div class="filter-scientists__image filter-scientists__image--11"></div>
-                <div class="filter-scientists__image filter-scientists__image--12"></div>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Google динозавр</h3>
+              <div class="dino-game">
+                <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
+                  <img class="dino-game__image" src="./src/image/raster/dino-game/dino-image@1x.png" alt="Dino">
+                </a>
               </div>
-              <div class="filter-scientists__filter-option-group">
-                <div class="filter-scientists__filter-option-top-section">
-                  <div class="filter-scientists__filter-option-left-section">
-                    <button class="filter-scientists__filter-option-btn" type="button">Які вчені народилися в 19 ст</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Відсортувати вчених за алфавітом</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Відсортувати вчених за кількістю прожитих років</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Знайти вченого, який народився найпізніше</button>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Футбол</h3>
+              <div class="football-game">
+                <div class="football-game__ball"></div>
+              </div>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Введіть 3 числа</h3>
+              <div class="max-number-game">
+                <form class="max-number-game__form">
+                  <label class="max-number-game__label" for="max-number-game-first">
+                    <input class="max-number-game__input" type="text" id="max-number-game-first" name="first-max-number" placeholder="Введіть число">
+                  </label>
+                  <label class="max-number-game__label" for="max-number-game-second">
+                    <input class="max-number-game__input" type="text" id="max-number-game-second" name="second-max-number" placeholder="Введіть число">
+                  </label>
+                  <label class="max-number-game__label" for="max-number-game-third">
+                    <input class="max-number-game__input" type="text" id="max-number-game-third" name="third-max-number" placeholder="Введіть число">
+                  </label>
+                </form>
+                <h3 class="max-number-game__resulat">Найбільше число, яке ви ввели - (число)</h3>
+              </div>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section" id="our-team">
+              <h3 class="game-section__title">Наша команда</h3>
+              <div class="team-slider">
+                <div class="team-slider__top">
+                  <img class="team-slider__arrow team-slider__left-arrow" src="./src/image/vector/team-slider/left-arrow.svg" alt="Arrow-left">
+                  <div class="team-slider__main-slider">
+                    <div class="team-slider__student-slide team-slider__student-slide--block">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-1.jpg" alt="Student1">
+                        <h3 class="team-slider__user-name"> Марія Ковальчук</h3>
+                        <p class="team-slider__student-info">Розробила сторінку з адаптивним дизайном для блогу.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-2.jpg" alt="Student2">
+                        <h3 class="team-slider__user-name">Олена Савченко</h3>
+                        <p class="team-slider__student-info">Створила форму реєстрації з валідацією на JavaScript.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-3.jpg" alt="Student3">
+                        <h3 class="team-slider__user-name">Дмитро Левченко</h3>
+                        <p class="team-slider__student-info">Реалізував інтерактивне меню для вебсайту на HTML і CSS.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-4.jpg" alt="Student4">
+                        <h3 class="team-slider__user-name">Іван Гордієнко</h3>
+                        <p class="team-slider__student-info">Зробив динамічну галерею зображень на JavaScript.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-5.jpg" alt="Student5">
+                        <h3 class="team-slider__user-name">Анастасія Романюк</h3>
+                        <p class="team-slider__student-info">Створила адаптивну сторінку з CSS Flexbox та Grid.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-6.jpg" alt="Student6">
+                        <h3 class="team-slider__user-name">Олександр Ковтун</h3>
+                        <p class="team-slider__student-info">Зробив калькулятор для вебсайту, використовуючи JavaScript.</p>
+                      </div>
+                    </div>
+                    <div class="team-slider__student-slide">
+                      <div class="team-slider__slide-content">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-7.jpg" alt="Student7">
+                        <h3 class="team-slider__user-name">Катерина Сидоренко</h3>
+                        <p class="team-slider__student-info">Реалізувала простий веб-додаток для нотаток з локальним збереженням даних.</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="filter-scientists__filter-option-right-section">
-                    <button class="filter-scientists__filter-option-btn" type="button">Знайти рік народження Albert Einshtein</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Видалити всіх вчених, ім’я яких починається на “А”</button>
-                    <button class="filter-scientists__filter-option-btn" type="button">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</button>
-                  </div>
+                  <img class="team-slider__arrow team-slider__right-arrow" src="./src/image/vector/team-slider/right-arrow.svg" alt="Arrow-right">
                 </div>
-                <button class="filter-scientists__filter-option-btn filter-scientists__filter-option-btn-bottom" type="button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                <div class="team-slider__bottom" id="team-slider-bottom"></div>
               </div>
-            </div>
-          </section>
+            </section>
+            <hr class="decor-line">
+            <section class="game-section">
+              <h3 class="game-section__title">Обери вченого/их</h3>
+              <div class="filter-scientists">
+                <div class="filter-scientists__image-group">
+                  <div class="filter-scientists__image filter-scientists__image--1"></div>
+                  <div class="filter-scientists__image filter-scientists__image--2"></div>
+                  <div class="filter-scientists__image filter-scientists__image--3"></div>
+                  <div class="filter-scientists__image filter-scientists__image--4"></div>
+                  <div class="filter-scientists__image filter-scientists__image--5"></div>
+                  <div class="filter-scientists__image filter-scientists__image--6"></div>
+                  <div class="filter-scientists__image filter-scientists__image--7"></div>
+                  <div class="filter-scientists__image filter-scientists__image--8"></div>
+                  <div class="filter-scientists__image filter-scientists__image--9"></div>
+                  <div class="filter-scientists__image filter-scientists__image--10"></div>
+                  <div class="filter-scientists__image filter-scientists__image--11"></div>
+                  <div class="filter-scientists__image filter-scientists__image--12"></div>
+                </div>
+                <div class="filter-scientists__filter-option-group">
+                  <div class="filter-scientists__filter-option-top-section">
+                    <div class="filter-scientists__filter-option-left-section">
+                      <button class="filter-scientists__filter-option-btn" type="button">Які вчені народилися в 19 ст</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Відсортувати вчених за алфавітом</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Відсортувати вчених за кількістю прожитих років</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Знайти вченого, який народився найпізніше</button>
+                    </div>
+                    <div class="filter-scientists__filter-option-right-section">
+                      <button class="filter-scientists__filter-option-btn" type="button">Знайти рік народження Albert Einshtein</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                      <button class="filter-scientists__filter-option-btn" type="button">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</button>
+                    </div>
+                  </div>
+                  <button class="filter-scientists__filter-option-btn filter-scientists__filter-option-btn-bottom" type="button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
     </main>
     <footer class="footer">

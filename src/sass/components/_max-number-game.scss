@@ -1,11 +1,8 @@
 .max-number-game {
-    width: 100%;
+    width: auto;
     @extend %position-center;
     flex-direction: column;
     gap: 36px;
-    &__padding {
-        padding: 0 270px 36px 270px;
-    }
     &__form {
         @extend %position-center;
         gap: 38px;

@@ -60,6 +60,14 @@ input, textarea, button {
 }
 .main {
     @extend %position-center-column;
+    &__content {
+        width: 100%;
+        padding: 36px 0;
+        @extend %position-center-column;
+        gap: 36px;
+        background-color: var(--game-section-bg);
+        transition: all 0.8s ease-in-out;
+    }
     &__title {
         color: var(--black-text);
         font-family: "Montserrat Alternates";
@@ -69,11 +77,15 @@ input, textarea, button {
         line-height: normal;
     }
     &__title-box {
-        padding: 36px 0;
-        background-color: var(--game-section-bg);
+        width: 100%;
         @extend %position-center;
-        transition: all 0.8s ease-in-out;
     }
+}
+.decor-line {
+    width: 536px;
+    height: 1px;
+    flex-shrink: 0;
+    background-color: var(--black-bg);
 }
 // @media (max-width: 1200px) {
 //     .container {
