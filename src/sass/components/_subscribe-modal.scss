@@ -44,4 +44,10 @@
         line-height: normal;
     }
 }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe-modal {
+        background-image: url("../image/raster/modal/sword@2x.png"), url("../image/raster/modal/puzzle@2x.png"), url("../image/raster/modal/game-development@2x.png"), url("../image/raster/modal/tic-tac-toe@2x.png");
+    }
+}

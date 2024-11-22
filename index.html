@@ -37,10 +37,15 @@
         </form>
       </div>
       <div class="container header__content">
-        <div class="header__main-group">
-          <a class="header__logo-link" href="#">
-            <img class="header__logo-image" src="./src/image/vector/main-logo.svg" alt="Logo">
-          </a>
+        <a class="header__logo-link" href="#">
+          <img class="header__logo-image-light logo-image--active" src="./src/image/vector/main-logo-light.svg" alt="Logo-light">
+          <img class="header__logo-image-nigh" src="./src/image/vector/main-logo-nigh.svg" alt="Logo-nigh">
+        </a>
+        <div class="menu-icon">
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line"></span>
+        </div>
+        <div class="menu-body">
           <nav class="nav">
             <div class="nav__list">
               <select class="nav__select" name="select">
@@ -50,26 +55,26 @@
                 <option class="nav__select-option">Ознайомчий</option>
               </select>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#our-team">Наша команда</a>
+                <a class="nav__list-link" href="#our-team" id="burger-btn">Наша команда</a>
               </div>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#contact">Контакти</a>
+                <a class="nav__list-link" href="#contact" id="burger-btn">Контакти</a>
               </div>
             </div>
           </nav>
-        </div>
-        <div class="header__info-group">
-          <label class="type-page" for="checkbox-style">
-            <input class="type-page__checbox" type="checkbox" name="checkbox" id="checkbox-style">
-            <span class="type-page__ball"></span>
-            <span class="type-page__light"></span>
-            <span class="type-page__dark inactive"></span>
-          </label>
-          <h3 class="header__welcome">Вітаємо, User!</h3>
+          <div class="header__info-group">
+            <label class="type-page" for="checkbox-style">
+              <input class="type-page__checbox" type="checkbox" name="checkbox" id="checkbox-style">
+              <span class="type-page__ball"></span>
+              <span class="type-page__light"></span>
+              <span class="type-page__dark inactive"></span>
+            </label>
+            <h3 class="header__welcome">Вітаємо, User!</h3>
+          </div>
         </div>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <div class="container">
           <div class="main__content">
             <div class="main__title-box">
@@ -194,7 +199,7 @@
               <h3 class="game-section__title">Google динозавр</h3>
               <div class="dino-game">
                 <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
-                  <img class="dino-game__image" src="./src/image/raster/dino-game/dino-image@1x.png" alt="Dino">
+                  <img class="dino-game__image" src="./src/image/raster/dino-game/dino-image@1x.png" srcset="./src/image/raster/dino-game/dino-image@1x.png 1x, ./src/image/raster/dino-game/dino-image@2x.png 2x" alt="Dino">
                 </a>
               </div>
             </section>
@@ -324,11 +329,12 @@
             </section>
           </div>
         </div>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <div class="container footer__content">
         <a class="footer__logo-link" href="#">
-          <img class="footer__logo-image" src="./src/image/vector/main-logo.svg" alt="Logo">
+          <img class="footer__logo-image-light logo-image--active" src="./src/image/vector/main-logo-light.svg" alt="Logo-light">
+          <img class="footer__logo-image-nigh" src="./src/image/vector/main-logo-nigh.svg" alt="Logo-nigh">
         </a>
         <ul class="footer__info-group" id="contact">
           <li class="footer__info-option">
@@ -365,7 +371,7 @@
         </button>
         <h2 class="subscribe-modal__title">Дякую за підписку!</h2>
       </div>
-    </footer>
+    </footer> -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -10,10 +10,19 @@
     &__logo-link {
         margin-top: 14px;
     }
-    &__logo-image {
+    &__logo-image-light {
         width: 165px;
         height: 70px;
         flex-shrink: 0;
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+    &__logo-image-nigh {
+        width: 165px;
+        height: 70px;
+        flex-shrink: 0;
+        display: none;
+        transition: all 0.3s ease-in-out;
     }
     &__info-group {
         width: auto;

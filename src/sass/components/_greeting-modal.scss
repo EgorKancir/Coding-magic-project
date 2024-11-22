@@ -115,7 +115,7 @@
 }
 .open-modal {
     position: fixed;
-    display: block !important;
+    display: flex !important;
 }
 .open-modal__activ-backdrop {
     position: fixed;
@@ -125,4 +125,50 @@
     background-color: var(--grey);
     opacity: 0.6;
     display: block !important;
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .greeting-modal {
+        background-image: url("../image/raster/modal/sword@2x.png"), url("../image/raster/modal/puzzle@2x.png"), url("../image/raster/modal/game-development@2x.png"), url("../image/raster/modal/tic-tac-toe@2x.png");
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 480px;
+    }
+    .greeting-modal {
+        width: 350px;
+        height: 310px;
+        padding: 20px 60px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        background-size: 25px 25px;
+        background-position: top 90px left 30px, bottom 40px left 20px, top 90px right 30px, bottom 40px right 20px;
+        &__main-text {
+            width: 100%;
+            font-size: 15px;
+        }
+        &__close-btn-svg {
+            width: 20px;
+            height: 20px;
+        }
+        &__label {
+            font-size: 13px;
+        }
+
+        // hier
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        width: 365px;
+    }
+}
+@media (max-width: 365px) {
+    .container {
+        width: 320px;
+    }
 }
