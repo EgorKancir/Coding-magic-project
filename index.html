@@ -2,14 +2,14 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/Coding-magic-project/assets/main-logo-DWVwfSY6.svg">
+    <link rel="icon" type="image/svg+xml" href="./src/image/vector/main-logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Magic</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Coding-magic-project/assets/index-Cse8ednE.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic-project/assets/index-BUlsqlVx.css">
+    <script type="module" crossorigin src="/Coding-magic-project/assets/index-PICd8QtD.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic-project/assets/index-ClNe8JFe.css">
   </head>
   <body class="theme-light">
     <header class="header">
@@ -37,10 +37,15 @@
         </form>
       </div>
       <div class="container header__content">
-        <div class="header__main-group">
-          <a class="header__logo-link" href="#">
-            <img class="header__logo-image" src="/Coding-magic-project/assets/main-logo-DWVwfSY6.svg" alt="Logo">
-          </a>
+        <a class="header__logo-link" href="#">
+          <img class="header__logo-image-light logo-image--active" src="/Coding-magic-project/assets/main-logo-light-DWVwfSY6.svg" alt="Logo-light">
+          <img class="header__logo-image-nigh" src="/Coding-magic-project/assets/main-logo-nigh-D_j7Kf3_.svg" alt="Logo-nigh">
+        </a>
+        <div class="menu-icon">
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line"></span>
+        </div>
+        <div class="menu-body">
           <nav class="nav">
             <div class="nav__list">
               <select class="nav__select" name="select">
@@ -50,26 +55,26 @@
                 <option class="nav__select-option">Ознайомчий</option>
               </select>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#our-team">Наша команда</a>
+                <a class="nav__list-link" href="#our-team" id="burger-btn">Наша команда</a>
               </div>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#contact">Контакти</a>
+                <a class="nav__list-link" href="#contact" id="burger-btn">Контакти</a>
               </div>
             </div>
           </nav>
-        </div>
-        <div class="header__info-group">
-          <label class="type-page" for="checkbox-style">
-            <input class="type-page__checbox" type="checkbox" name="checkbox" id="checkbox-style">
-            <span class="type-page__ball"></span>
-            <span class="type-page__light"></span>
-            <span class="type-page__dark inactive"></span>
-          </label>
-          <h3 class="header__welcome">Вітаємо, User!</h3>
+          <div class="header__info-group">
+            <label class="type-page" for="checkbox-style">
+              <input class="type-page__checbox" type="checkbox" name="checkbox" id="checkbox-style">
+              <span class="type-page__ball"></span>
+              <span class="type-page__light"></span>
+              <span class="type-page__dark inactive"></span>
+            </label>
+            <h3 class="header__welcome">Вітаємо, User!</h3>
+          </div>
         </div>
       </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <div class="container">
           <div class="main__content">
             <div class="main__title-box">
@@ -126,15 +131,15 @@
                   <div class="ssp-game__game-consol">
                     <input class="ssp-game__input" type="radio" id="game-stone" name="ssp-game" value="stone">
                     <label class="ssp-game__label" for="game-stone">
-                      <img class="ssp-game__element-svg" src="/Coding-magic-project/assets/stone-DJzxAZMD.svg" alt="Stone">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/stone.svg" alt="Stone">
                     </label>
                     <input class="ssp-game__input" type="radio" id="game-scissors" name="ssp-game" value="scissors">
                     <label class="ssp-game__label" for="game-scissors">
-                      <img class="ssp-game__element-svg" src="/Coding-magic-project/assets/scissors-Dolmgs1A.svg" alt="Scissors">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/scissors.svg" alt="Scissors">
                     </label>
                     <input class="ssp-game__input" type="radio" id="game-paper" name="ssp-game" value="paper">
                     <label class="ssp-game__label" for="game-paper">
-                      <img class="ssp-game__element-svg" src="/Coding-magic-project/assets/paper-BgKl3KHz.svg" alt="Paper">
+                      <img class="ssp-game__element-svg" src="./src/image/vector/ssp-game/paper.svg" alt="Paper">
                     </label>
                   </div>
                   <h3 class="ssp-game__result-text">???</h3>
@@ -194,7 +199,7 @@
               <h3 class="game-section__title">Google динозавр</h3>
               <div class="dino-game">
                 <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
-                  <img class="dino-game__image" src="/Coding-magic-project/assets/dino-image@1x-rIEkVT6z.png" alt="Dino">
+                  <img class="dino-game__image" src="./src/image/raster/dino-game/dino-image@1x.png" srcset="./src/image/raster/dino-game/dino-image@1x.png 1x, ./src/image/raster/dino-game/dino-image@2x.png 2x" alt="Dino">
                 </a>
               </div>
             </section>
@@ -228,59 +233,59 @@
               <h3 class="game-section__title">Наша команда</h3>
               <div class="team-slider">
                 <div class="team-slider__top">
-                  <img class="team-slider__arrow team-slider__left-arrow" src="data:image/svg+xml,%3csvg%20width='52'%20height='102'%20viewBox='0%200%2052%20102'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M51%201L1%2051L51%20101'%20stroke='black'/%3e%3c/svg%3e" alt="Arrow-left">
+                  <img class="team-slider__arrow team-slider__left-arrow" src="./src/image/vector/team-slider/left-arrow.svg" alt="Arrow-left">
                   <div class="team-slider__main-slider">
                     <div class="team-slider__student-slide team-slider__student-slide--block">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-1-Rc9QFDKh.jpg" alt="Student1">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-1.jpg" alt="Student1">
                         <h3 class="team-slider__user-name"> Марія Ковальчук</h3>
                         <p class="team-slider__student-info">Розробила сторінку з адаптивним дизайном для блогу.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-2-twoEBOVH.jpg" alt="Student2">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-2.jpg" alt="Student2">
                         <h3 class="team-slider__user-name">Олена Савченко</h3>
                         <p class="team-slider__student-info">Створила форму реєстрації з валідацією на JavaScript.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-3-X2d3-GrI.jpg" alt="Student3">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-3.jpg" alt="Student3">
                         <h3 class="team-slider__user-name">Дмитро Левченко</h3>
                         <p class="team-slider__student-info">Реалізував інтерактивне меню для вебсайту на HTML і CSS.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-4-ClPfI2iu.jpg" alt="Student4">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-4.jpg" alt="Student4">
                         <h3 class="team-slider__user-name">Іван Гордієнко</h3>
                         <p class="team-slider__student-info">Зробив динамічну галерею зображень на JavaScript.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-5-Xq_Kx1K1.jpg" alt="Student5">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-5.jpg" alt="Student5">
                         <h3 class="team-slider__user-name">Анастасія Романюк</h3>
                         <p class="team-slider__student-info">Створила адаптивну сторінку з CSS Flexbox та Grid.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-6-BvCsMv-_.jpg" alt="Student6">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-6.jpg" alt="Student6">
                         <h3 class="team-slider__user-name">Олександр Ковтун</h3>
                         <p class="team-slider__student-info">Зробив калькулятор для вебсайту, використовуючи JavaScript.</p>
                       </div>
                     </div>
                     <div class="team-slider__student-slide">
                       <div class="team-slider__slide-content">
-                        <img class="team-slider__student-image" src="/Coding-magic-project/assets/student-7-Dzi7Reat.jpg" alt="Student7">
+                        <img class="team-slider__student-image" src="./src/image/raster/team-slider/student-7.jpg" alt="Student7">
                         <h3 class="team-slider__user-name">Катерина Сидоренко</h3>
                         <p class="team-slider__student-info">Реалізувала простий веб-додаток для нотаток з локальним збереженням даних.</p>
                       </div>
                     </div>
                   </div>
-                  <img class="team-slider__arrow team-slider__right-arrow" src="data:image/svg+xml,%3csvg%20width='52'%20height='102'%20viewBox='0%200%2052%20102'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L51%2051L1%20101'%20stroke='black'/%3e%3c/svg%3e" alt="Arrow-right">
+                  <img class="team-slider__arrow team-slider__right-arrow" src="./src/image/vector/team-slider/right-arrow.svg" alt="Arrow-right">
                 </div>
                 <div class="team-slider__bottom" id="team-slider-bottom"></div>
               </div>
@@ -324,11 +329,12 @@
             </section>
           </div>
         </div>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
       <div class="container footer__content">
         <a class="footer__logo-link" href="#">
-          <img class="footer__logo-image" src="/Coding-magic-project/assets/main-logo-DWVwfSY6.svg" alt="Logo">
+          <img class="footer__logo-image-light logo-image--active" src="./src/image/vector/main-logo-light.svg" alt="Logo-light">
+          <img class="footer__logo-image-nigh" src="./src/image/vector/main-logo-nigh.svg" alt="Logo-nigh">
         </a>
         <ul class="footer__info-group" id="contact">
           <li class="footer__info-option">
@@ -365,7 +371,7 @@
         </button>
         <h2 class="subscribe-modal__title">Дякую за підписку!</h2>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
 
