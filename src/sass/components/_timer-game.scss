@@ -1,19 +1,52 @@
 .timer-game {
-    width: auto;
-    @extend %position-center;
+    width: 470px;
+    @include flex(start, center);
     gap: 33px;
+    position: relative;
     &__form {
         width: 150px;
     }
     &__input {
         width: 115px;
     }
+    &__decor-line {
+        width: 100px;
+        height: auto;
+        flex-shrink: 0;
+        stroke: var(--black-text);
+    }
     &__result {
+        width: 100%;
         color: var(--black-text);
         font-family: "Montserrat Alternates";
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+        left: 316px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.active-decor-line {
+    animation: lineAnimation 3s ease-in-out infinite;
+}
+@keyframes lineAnimation {
+    0% {
+        transform: scaleX(0.8);
+    }
+    25% {
+        transform: scaleX(1.2);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    75% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(0.8);
     }
 }

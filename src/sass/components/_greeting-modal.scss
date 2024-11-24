@@ -149,7 +149,7 @@
         background-position: top 90px left 30px, bottom 40px left 20px, top 90px right 30px, bottom 40px right 20px;
         &__main-text {
             width: 100%;
-            font-size: 15px;
+            font-size: 14px;
         }
         &__close-btn-svg {
             width: 20px;
@@ -158,17 +158,26 @@
         &__label {
             font-size: 13px;
         }
-
-        // hier
     }
 }
 @media (max-width: 480px) {
     .container {
         width: 365px;
     }
+    .greeting-modal {
+        width: 320px;
+        height: 340px;
+    }
 }
 @media (max-width: 365px) {
     .container {
         width: 320px;
+    }
+    .greeting-modal {
+        width: 280px;
+        height: 350px;
+        padding: 18px 40px;
+        background-size: 20px 20px;
+        background-position: top 90px left 18px, bottom 40px left 20px, top 90px right 18px, bottom 40px right 20px;
     }
 }

@@ -1,11 +1,11 @@
 let resultGame = document.querySelector('.ssp-game__result-text');
-const submitBtn = document.querySelector('.ssp-game__btn');
+const saveBtn = document.querySelector('.ssp-game__btn');
 let compWinResult = document.getElementById('ssp-game__result-computer');
 let userWinResult = document.getElementById('ssp-game__result-user');
 let numberCompWin = 0;
 let numberUserWin = 0;
 
-submitBtn.addEventListener("click", () => {
+function sendOption() {
     let userOption = document.querySelector('input[name="ssp-game"]:checked');
     if (userOption) {
         let userOptionValue = userOption.value;
@@ -14,7 +14,7 @@ submitBtn.addEventListener("click", () => {
         resultGame.textContent = 'Будь ласка, виберіть один із варіантів.';
         resultGame.style.color = 'orange';
     }
-})
+}
 function sspGame(userElement) {
     const elementArr = ['stone', 'scissors', 'paper'];
     let randomNumber = Math.floor(Math.random() * (3 - 0) + 0); 
@@ -67,3 +67,5 @@ function sspGame(userElement) {
         }
     }
 }
+
+saveBtn.addEventListener("click", sendOption);

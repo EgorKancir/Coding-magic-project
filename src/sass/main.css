@@ -4,7 +4,7 @@
   scroll-behavior: smooth;
 }
 
-.main__title-box, .subscribe-modal__close-btn, .subscribe-modal, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .timer-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .greeting-modal__close-btn, .greeting-modal__main-group {
+.main__title-box, .subscribe-modal__close-btn, .subscribe-modal, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .greeting-modal__close-btn, .greeting-modal__main-group {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,7 +229,7 @@
   }
   .greeting-modal__main-text {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
   }
   .greeting-modal__close-btn-svg {
     width: 20px;
@@ -243,10 +243,21 @@
   .container {
     width: 365px;
   }
+  .greeting-modal {
+    width: 320px;
+    height: 340px;
+  }
 }
 @media (max-width: 365px) {
   .container {
     width: 320px;
+  }
+  .greeting-modal {
+    width: 280px;
+    height: 350px;
+    padding: 18px 40px;
+    background-size: 20px 20px;
+    background-position: top 90px left 18px, bottom 40px left 20px, top 90px right 18px, bottom 40px right 20px;
   }
 }
 .header {
@@ -845,8 +856,12 @@
 }
 
 .timer-game {
-  width: auto;
+  width: 470px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   gap: 33px;
+  position: relative;
 }
 .timer-game__form {
   width: 150px;
@@ -854,15 +869,48 @@
 .timer-game__input {
   width: 115px;
 }
+.timer-game__decor-line {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  stroke: var(--black-text);
+}
 .timer-game__result {
+  width: 100%;
   color: var(--black-text);
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  left: 316px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+.active-decor-line {
+  animation: lineAnimation 3s ease-in-out infinite;
+}
+
+@keyframes lineAnimation {
+  0% {
+    transform: scaleX(0.8);
+  }
+  25% {
+    transform: scaleX(1.2);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  75% {
+    transform: scaleX(1.2);
+  }
+  100% {
+    transform: scaleX(0.8);
+  }
+}
 .dino-game {
   width: 720px;
   height: 273px;

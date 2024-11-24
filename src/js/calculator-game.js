@@ -1,16 +1,20 @@
 let decisionResult = document.querySelector(".calculator-game__resulat");
 const decisionBtn = document.getElementById("calculator-decision");
 
-decisionBtn.addEventListener("click", () => {
+function sendData() {
     let userFirstNumber = document.getElementById("calculator-first-number");
     let userSecondNumber = document.getElementById("calculator-second-number");
     let userSign = document.querySelector('input[name="calculator-sign"]:checked');
-    if (userFirstNumber && userSecondNumber && userSign) {
+    if (!userFirstNumber.value.trim() || !userSecondNumber.value.trim() || !userSign) {
+        alert('Будь ласка, заповніть всі поля введеня.');
+        return
+    } else if (!isNaN(Number(userFirstNumber.value)) && !isNaN(Number(userSecondNumber.value))) {
         calculator(userFirstNumber.value, userSign.value, userSecondNumber.value);
     } else {
-        alert('Будь ласка, заповніть всі поля введеня.')
+        alert('Данні введено не вірно! Всі данні повинні бути числами.')
+        return
     }
-})
+}
 function calculator(firstNum, sign, secondNum) {
     let result;
     firstNum = Number(firstNum);
@@ -34,3 +38,4 @@ function calculator(firstNum, sign, secondNum) {
     }
     decisionResult.textContent = result;
 }
+decisionBtn.addEventListener("click", sendData);

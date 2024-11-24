@@ -34,7 +34,7 @@ checkBox.addEventListener("change", () => {
 
 // modal
 const iconMenu = document.querySelector('.menu-icon');
-const burgerBtn = document.getElementById('burger-btn');
+const burgerBtn = document.querySelector('.nav__list-link');
 if (iconMenu) {
     const headerMenu = document.querySelector('.header');
     const menuBody = document.querySelector('.menu-body');

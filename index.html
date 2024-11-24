@@ -37,7 +37,7 @@
         </form>
       </div>
       <div class="container header__content">
-        <a class="header__logo-link" href="#">
+        <a class="header__logo-link" href="./index.html">
           <img class="header__logo-image-light logo-image--active" src="./src/image/vector/main-logo-light.svg" alt="Logo-light">
           <img class="header__logo-image-nigh" src="./src/image/vector/main-logo-nigh.svg" alt="Logo-nigh">
         </a>
@@ -55,10 +55,10 @@
                 <option class="nav__select-option">Ознайомчий</option>
               </select>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#our-team" id="burger-btn">Наша команда</a>
+                <a class="nav__list-link" href="#our-team">Наша команда</a>
               </div>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#contact" id="burger-btn">Контакти</a>
+                <a class="nav__list-link" href="#contact">Контакти</a>
               </div>
             </div>
           </nav>
@@ -69,7 +69,7 @@
               <span class="type-page__light"></span>
               <span class="type-page__dark inactive"></span>
             </label>
-            <h3 class="header__welcome">Вітаємо, User!</h3>
+            <h3 class="header__welcome">Вітаємо, <span class="header__welcome-user">User</span>!</h3>
           </div>
         </div>
       </div>
@@ -189,9 +189,9 @@
                   </button>
                 </form>
                 <svg class="timer-game__decor-line" xmlns="http://www.w3.org/2000/svg" width="100" height="2" viewBox="0 0 100 2" fill="none">
-                  <path d="M0 1H100" stroke="black" stroke-dasharray="2 2"/>
+                  <path d="M0 1H100" stroke="inherit" stroke-dasharray="2 2"/>
                 </svg>
-                <h4 class="timer-game__result">YYYY-MM-DDTHH:MM</h4>
+                <h4 class="timer-game__result">Введіть дату у форматі YYYY-MM-DDTHH:MM</h4>
               </div>
             </section>
             <hr class="decor-line">
@@ -332,7 +332,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__content">
-        <a class="footer__logo-link" href="#">
+        <a class="footer__logo-link" href="index.html">
           <img class="footer__logo-image-light logo-image--active" src="./src/image/vector/main-logo-light.svg" alt="Logo-light">
           <img class="footer__logo-image-nigh" src="./src/image/vector/main-logo-nigh.svg" alt="Logo-nigh">
         </a>
@@ -356,7 +356,7 @@
         <form class="footer__form">
           <div class="footer__input-group">
             <label class="footer__form-label" for="footer-user-email">
-              <input class="footer__form-input" type="email" name="email" id="footer-user-email" placeholder="Ваша ел. адреса...">
+              <input class="footer__form-input" type="email" name="email" id="footer-user-email" placeholder="Ваша ел. адреса..." required>
             </label>
             <button class="footer__form-submit" type="button">Підписатись</button>
           </div>
