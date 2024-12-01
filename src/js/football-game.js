@@ -1,26 +1,42 @@
 const ball = document.querySelector(".football-game__ball");
 const footballField = document.querySelector(".football-game");
-let clickMouse = false;
-let ballX, ballY;
-ball.addEventListener("mousedown", (e) => {
-    clickMouse = true;
-    const rect = ball.getBoundingClientRect();
-    ballX = e.clientX - rect.left;
-    ballY = e.clientY - rect.top;
-});
-document.addEventListener('mousemove', (e) => {
-    if (clickMouse) {
-        const parentRect = footballField.getBoundingClientRect();
-        const elementRect = ball.getBoundingClientRect();
-        let newLeft = e.clientX - ballX;
-        let newTop = e.clientY - ballY;
-        newLeft = Math.max(parentRect.left, Math.min(newLeft, parentRect.right - elementRect.width));
-        newTop = Math.max(parentRect.top, Math.min(newTop, parentRect.bottom - elementRect.height));
-        ball.style.transform = 'none';
-        ball.style.left = `${newLeft - parentRect.left}px`;
-        ball.style.top = `${newTop - parentRect.top}px`;
-    }
-});
-document.addEventListener("mouseup", () => {
-    clickMouse = false;
-});
+
+let isDragging = false;
+let ballX, ballY, ballPosition;
+
+function startDragging(e) {
+    isDragging = true;
+    ballPosition = ball.getBoundingClientRect();
+    const clientX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+    ballX = clientX - ballPosition.left - ballPosition.width / 2;
+    ballY = clientY - ballPosition.top - ballPosition.height / 2;
+}
+
+function moveBall(e) {
+    if (!isDragging) return;
+    const clientX = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+    const newLeft = clientX - ballX;
+    const newTop = clientY - ballY;
+    const fieldRect = footballField.getBoundingClientRect();
+    const ballDiameter = ball.offsetWidth;
+    const minLeft = fieldRect.left;
+    const maxLeft = fieldRect.right - ballDiameter;
+    const minTop = fieldRect.top;
+    const maxTop = fieldRect.bottom - ballDiameter;
+    ball.style.transform = "none";
+    ball.style.left = `${Math.min(Math.max(newLeft, minLeft), maxLeft) - fieldRect.left}px`;
+    ball.style.top = `${Math.min(Math.max(newTop, minTop), maxTop) - fieldRect.top}px`;
+}
+
+function stopDragging() {
+    isDragging = false;
+}
+ball.addEventListener("mousedown", startDragging);
+document.addEventListener("mousemove", moveBall);
+document.addEventListener("mouseup", stopDragging);
+
+ball.addEventListener("touchstart", startDragging);
+document.addEventListener("touchmove", moveBall);
+document.addEventListener("touchend", stopDragging);

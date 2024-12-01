@@ -34,20 +34,25 @@ checkBox.addEventListener("change", () => {
 
 // modal
 const iconMenu = document.querySelector('.menu-icon');
-const burgerBtn = document.querySelector('.nav__list-link');
+const selectOption1 = document.getElementById('select-option-1');
+const selectOption2 = document.getElementById('select-option-2');
+const selectOption3 = document.getElementById('select-option-3');
+const firstLink = document.getElementById('nav-first-link');
+const secondLink = document.getElementById('nav-second-link');
+
 if (iconMenu) {
     const headerMenu = document.querySelector('.header');
     const menuBody = document.querySelector('.menu-body');
-    iconMenu.addEventListener("click", function (e) {
+    function closeMenu() {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
         headerMenu.classList.toggle('_active');
-    });
-    burgerBtn.addEventListener("click", () => {
-        document.body.classList.toggle('_lock');
-        iconMenu.classList.toggle('_active');
-        menuBody.classList.toggle('_active');
-        headerMenu.classList.toggle('_active');
-    } )
+    }
+    iconMenu.addEventListener("click", closeMenu);
+    firstLink.addEventListener("click", closeMenu);
+    secondLink.addEventListener("click", closeMenu);
+    selectOption1.addEventListener("click", closeMenu);
+    selectOption2.addEventListener("click", closeMenu);
+    selectOption3.addEventListener("click", closeMenu);
 }

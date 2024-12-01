@@ -9,6 +9,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
     }
 }
 .checking-form {
@@ -65,5 +66,25 @@
         width: 15px;
         height: 15px;
         stroke: var(--white);
+    }
+}
+@media (max-width: 1200px) {
+    .checking-year {
+        width: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .checking-year {
+        width: auto;
+        @include flex-dop(center, center, column);
+        gap: 32px;
+        &__result {
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .checking-year {
+        gap: 25px;
     }
 }

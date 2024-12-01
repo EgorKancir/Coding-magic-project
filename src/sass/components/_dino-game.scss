@@ -15,3 +15,12 @@
         height: 100%;
     }
 }
+@media (max-width: 1200px) {
+    .dino-game {
+        width: 90%;
+        height: auto;
+        &__image {
+            height: auto;
+        }
+    }
+}

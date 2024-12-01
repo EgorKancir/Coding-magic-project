@@ -94,3 +94,29 @@
         line-height: normal;
     }
 }
+@media (max-width: 1200px) {
+    .calculator-game {
+        gap: 34px;
+        &__form {
+            gap: 34px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .calculator-game {
+        @include flex-dop(center, center, column);
+        gap: 32px;
+        &__form {
+            @include flex-dop(center, center, column);
+            gap: 32px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .calculator-game {
+        gap: 25px;
+        &__form {
+            gap: 25px;
+        }
+    }
+}

@@ -15,5 +15,18 @@
         height: 50px;
         flex-shrink: 0;
         background-image: url("../image/raster/football-game/ball.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1200px) {
+    .football-game {
+        width: 90%;
+        &__ball {
+            width: 40px;
+            height: 40px;
+        }
     }
 }

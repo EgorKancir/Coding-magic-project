@@ -48,17 +48,32 @@
         <div class="menu-body">
           <nav class="nav">
             <div class="nav__list">
-              <select class="nav__select" name="select">
-                <option class="nav__select-option">Інтерактив</option>
-                <option class="nav__select-option">Числовий</option>
-                <option class="nav__select-option">Ігровий</option>
-                <option class="nav__select-option">Ознайомчий</option>
-              </select>
-              <div class="nav__list-item">
-                <a class="nav__list-link" href="#our-team">Наша команда</a>
+              <div class="select">
+                <div class="select__header">
+                  <span class="select__current">Інтерактив</span>
+                  <div class="select__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7" fill="none">
+                      <path d="M10 1L5.5 6L1 1" stroke="inherit" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="select__body">
+                  <div class="select__option">
+                    <a class="select__option-link" href="#guess-number" id="select-option-1">Числовий</a>
+                  </div>
+                  <div class="select__option">
+                    <a class="select__option-link" href="#football" id="select-option-2">Ігровий</a>
+                  </div>
+                  <div class="select__option">
+                    <a class="select__option-link" href="#scientists" id="select-option-3">Ознайомчий</a>
+                  </div>
+                </div>
               </div>
               <div class="nav__list-item">
-                <a class="nav__list-link" href="#contact">Контакти</a>
+                <a class="nav__list-link" href="#our-team" id="nav-first-link">Наша команда</a>
+              </div>
+              <div class="nav__list-item">
+                <a class="nav__list-link" href="#contact" id="nav-second-link">Контакти</a>
               </div>
             </div>
           </nav>
@@ -99,7 +114,7 @@
                 </div>
             </section>
             <hr class="decor-line">
-            <section class="game-section">
+            <section class="game-section" id="guess-number">
               <h3 class="game-section__title">Вгадай число, яке загадав комп’ютер</h3>
               <div class="guess-number">
                 <form class="checking-form guess-number__form">
@@ -195,7 +210,7 @@
               </div>
             </section>
             <hr class="decor-line">
-            <section class="game-section">
+            <section class="game-section" id="dino">
               <h3 class="game-section__title">Google динозавр</h3>
               <div class="dino-game">
                 <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
@@ -204,7 +219,7 @@
               </div>
             </section>
             <hr class="decor-line">
-            <section class="game-section">
+            <section class="game-section" id="football">
               <h3 class="game-section__title">Футбол</h3>
               <div class="football-game">
                 <div class="football-game__ball"></div>
@@ -291,7 +306,7 @@
               </div>
             </section>
             <hr class="decor-line">
-            <section class="game-section">
+            <section class="game-section" id="scientists">
               <h3 class="game-section__title">Обери вченого/их</h3>
               <div class="filter-scientists">
                 <div class="filter-scientists__image-group">

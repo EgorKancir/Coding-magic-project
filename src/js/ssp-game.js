@@ -19,7 +19,6 @@ function sspGame(userElement) {
     const elementArr = ['stone', 'scissors', 'paper'];
     let randomNumber = Math.floor(Math.random() * (3 - 0) + 0); 
     let compOption = elementArr[randomNumber];
-    console.log(randomNumber);
     if (userElement === 'stone') {
         if (compOption === 'scissors') {
             numberUserWin += 1;

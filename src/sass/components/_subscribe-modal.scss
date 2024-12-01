@@ -51,3 +51,24 @@
         background-image: url("../image/raster/modal/sword@2x.png"), url("../image/raster/modal/puzzle@2x.png"), url("../image/raster/modal/game-development@2x.png"), url("../image/raster/modal/tic-tac-toe@2x.png");
     }
 }
+@media (max-width: 768px) {
+    .subscribe-modal {
+        width: 350px;
+        height: 220px;
+        padding: 55px 0 138px 0;
+        background-position: top 69px left 40px, bottom 70px left 87px, top 69px right 40px, bottom 70px right 86px;
+    }
+}
+@media (max-width: 480px) {
+    .subscribe-modal {
+        width: 280px;
+        height: 200px;
+        padding: 55px 0 120px 0;
+        background-position: top 19px left 40px, bottom 50px left 73px, top 25px right 55px, bottom 50px right 78px;
+    }
+}
+@media (max-width: 365px) {
+    .decor-line {
+        width: 230px;
+    }
+}

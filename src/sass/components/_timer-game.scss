@@ -50,3 +50,30 @@
         transform: scaleX(0.8);
     }
 }
+
+@media (max-width: 1200px) {
+    .timer-game {
+        width: auto;
+        @include flex-dop(center, center, column);
+        gap: 34px;
+        &__result {
+            @include flex(center, center);
+            width: 100%;
+            text-align: center;
+            position: static;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .timer-game {
+        gap: 32px;
+    }
+}
+@media (max-width: 480px) {
+    .timer-game {
+        gap: 25px;
+        &__result {
+            width: 170px;
+        }
+    }
+}

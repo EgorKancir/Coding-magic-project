@@ -77,3 +77,47 @@
         }
     }
 }
+@media (max-width: 1200px) {
+    .ssp-game {
+        &__result-consol {
+            right: -130px;
+        }
+        &__form {
+            gap: 34px;
+        }
+        &__game-consol {
+            gap: 34px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .ssp-game {
+        @include flex-dop(center, center, column);
+        gap: 32px;
+        &__result-consol {
+            @include flex(center, center);
+            width: auto;
+            position: static;
+        }
+        &__result-consol-list {
+            @include flex-dop(center, center, column);
+        }
+        &__form {
+            gap: 32px;
+        }
+        &__game-consol {
+            gap: 32px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .ssp-game {
+        gap: 25px;
+        &__form {
+            gap: 25px;
+        }
+        &__game-consol {
+            gap: 25px;
+        }
+    }
+}

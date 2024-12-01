@@ -33,5 +33,34 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .max-number-game {
+        gap: 34px;
+        &__form {
+            gap: 34px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .max-number-game {
+        gap: 32px;
+        &__form {
+            @include flex-dop(center, center, column);
+            gap: 32px;
+        }
+        &__resulat {
+            width: 90%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .max-number-game {
+        gap: 25px;
+        &__form {
+            gap:  25px;
+        }
     }
 }

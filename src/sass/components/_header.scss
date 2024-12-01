@@ -48,30 +48,6 @@
         @extend %position-center;
         gap: 50px;
     }
-    &__select {
-        color: var(--black-text);
-        background-color: inherit;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        border: none; 
-        &:hover {
-            transform: translateY(5px);
-            opacity: 0.7;
-            transition: all 0.2s ease-in-out;
-        }
-    }
-    &__select-option {
-        color: var(--black-text);
-        background-color: inherit;
-        font-family: "Montserrat Alternates";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
     &__list-link {
         display: block;
         color: var(--black-text);
@@ -81,7 +57,7 @@
         font-weight: 400;
         line-height: normal;
         &:hover {
-            transform: translateY(5px);
+            transform: translateY(2px);
             opacity: 0.8;
             transition: all 0.2s ease-in-out;
         }
@@ -160,9 +136,6 @@
 
 
 @media (max-width: 1200px) {
-    .container {
-        width: 734px;
-    }
     .header {
         &__content {
             gap: 40px;
@@ -179,9 +152,6 @@
     }
 }
 @media (max-width: 768px) {
-    .container {
-        width: 480px;
-    }
     .header {
         &__content {
             @include flex(space-between, center);
@@ -262,9 +232,9 @@
         padding: 30px 0;
         @include flex-dop(start, center, column);
         gap: 80px;
-        background-color: var(--white-bg);
+        background-color: var(--game-section-bg);
         transform: translate(-100%, 0px);
-        transition: all 0.3s ease 0s;
+        transition: all 0.8s ease-in-out;
         &._active {
             transform: translate(0px, 0px);
         }
@@ -277,27 +247,11 @@
             @include flex-dop(center, center, column);
             gap: 50px;
         }
-        &__select {
-            font-size: 25px;
-        }
-        &__select-option {
-            font-size: 25px;
-        }
         &__list-link {
             font-size: 25px;
         }
     }
     .type-page {
         transform: scale(1.5);
-    }
-}
-@media (max-width: 480px) {
-    .container {
-        width: 365px;
-    }
-}
-@media (max-width: 365px) {
-    .container {
-        width: 320px;
     }
 }

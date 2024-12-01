@@ -134,9 +134,6 @@
     }
 }
 @media (max-width: 768px) {
-    .container {
-        width: 480px;
-    }
     .greeting-modal {
         width: 350px;
         height: 310px;
@@ -161,18 +158,12 @@
     }
 }
 @media (max-width: 480px) {
-    .container {
-        width: 365px;
-    }
     .greeting-modal {
         width: 320px;
         height: 340px;
     }
 }
 @media (max-width: 365px) {
-    .container {
-        width: 320px;
-    }
     .greeting-modal {
         width: 280px;
         height: 350px;

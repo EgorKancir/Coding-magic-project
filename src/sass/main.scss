@@ -10,6 +10,7 @@
 @import 
 './components/greeting-modal',
 './components/header',
+'./components/header-select',
 './components/game-section',
 './components/checking-year',
 './components/guess-number',
@@ -86,6 +87,7 @@ input, textarea, button {
     height: 1px;
     flex-shrink: 0;
     background-color: var(--black-bg);
+    border: none;
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -98,19 +100,57 @@ input, textarea, button {
     .container {
         width: 734px;
     }
+    .main {
+        &__content {
+            padding: 34px 0;
+            gap: 34px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+    }
+    .decor-line {
+        width: 400px;
+    }
 }
 @media (max-width: 768px) {
     .container {
         width: 480px;
+    }
+    .main {
+        &__content {
+            padding: 32px 0;
+            gap: 32px;
+        }
+    }
+    .decor-line {
+        width: 330px;
     }
 }
 @media (max-width: 480px) {
     .container {
         width: 365px;
     }
+    .main {
+        &__content {
+            padding: 25px 0;
+            gap: 25px;
+        }
+        &__title {
+            width: 170px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    .decor-line {
+        width: 250px;
+    }
 }
 @media (max-width: 365px) {
     .container {
         width: 320px;
+    }
+    .decor-line {
+        width: 230px;
     }
 }

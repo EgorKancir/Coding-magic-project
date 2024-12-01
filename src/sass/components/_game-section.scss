@@ -11,3 +11,29 @@
         line-height: normal;
     }
 }
+@media (max-width: 1200px) {
+    .game-section {
+        gap: 34px;
+        &__title {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .game-section {
+        gap: 32px;
+        &__title {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .game-section {
+        gap: 25px;
+        &__title {
+            width: 170px;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+}

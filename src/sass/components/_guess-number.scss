@@ -9,11 +9,33 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
     }
     &__form {
         width: 150px;
     }
     &__input {
         width: 115px;
+    }
+}
+@media (max-width: 1200px) {
+    .guess-number {
+        width: 500px;
+        gap: 34px;
+    }
+}
+@media (max-width: 768px) {
+    .guess-number {
+        width: auto;
+        @include flex-dop(center, center, column);
+        gap: 32px;
+        &__result {
+            width: 70%;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .guess-number {
+        gap: 25px;
     }
 }
