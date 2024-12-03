@@ -39,12 +39,15 @@
     }
     25% {
         transform: scaleX(1.2);
+        box-shadow: 0px 0px 10px 1px var(--green);
     }
     50% {
         transform: scaleX(1);
+        box-shadow: 0px 0px 15px 1px var(--green);
     }
     75% {
         transform: scaleX(1.2);
+        box-shadow: 0px 0px 10px 1px var(--green);
     }
     100% {
         transform: scaleX(0.8);
