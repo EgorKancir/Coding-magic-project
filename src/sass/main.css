@@ -56,7 +56,7 @@
   --white-bg: #000;
   --white-text: #000;
   --white-ball-bg: #000;
-  --select-hover: #F1F1F1;
+  --select-hover: #464646;
   --black: #FFF;
   --black-bg: #FFF;
   --black-text: #FFF;
@@ -1579,7 +1579,7 @@
   content: "Name: Lise, Surname: Meitner, Born: 1878, Dead: 1968.";
 }
 .filter-scientists__image--12 {
-  background-image: url("../image/raster/filter-scientist/hanna-hammarström.jpg");
+  background-image: url("../image/raster/filter-scientist/hanna-hammarstrom.jpg");
 }
 .filter-scientists__image--12:hover::after {
   content: "Name: Hanna, Surname: Hammarström, Born: 1829, Dead: 1909.";
