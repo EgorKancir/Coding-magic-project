@@ -67,4 +67,8 @@ function sspGame(userElement) {
     }
 }
 
-saveBtn.addEventListener("click", sendOption);
+saveBtn.addEventListener("click", _.debounce(() => {
+    sendOption();
+}, 1500)
+);
+// saveBtn.addEventListener("click", sendOption);

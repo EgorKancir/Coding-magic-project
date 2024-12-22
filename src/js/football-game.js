@@ -34,9 +34,17 @@ function stopDragging() {
     isDragging = false;
 }
 ball.addEventListener("mousedown", startDragging);
-document.addEventListener("mousemove", moveBall);
+document.addEventListener("mousemove", _.throttle((event) => {
+    moveBall(event);
+    }, 20)
+);
+// document.addEventListener("mousemove", moveBall);
 document.addEventListener("mouseup", stopDragging);
 
 ball.addEventListener("touchstart", startDragging);
-document.addEventListener("touchmove", moveBall);
+document.addEventListener("touchmove", _.throttle((event) => {
+    moveBall(event);
+    }, 20)
+);
+// document.addEventListener("touchmove", moveBall);
 document.addEventListener("touchend", stopDragging);

@@ -20,9 +20,15 @@ function maxNumberFunc(first, second, third) {
     
 };
 [firstNumber, secondNumber, thirdNumber].forEach(inputField => {
-    inputField.addEventListener("input", () => {
-        maxNumberFunc(firstNumber, secondNumber, thirdNumber);
-    });
+    inputField.addEventListener("input", _.debounce(() => {
+            maxNumberFunc(firstNumber, secondNumber, thirdNumber);
+        }, 2500)
+    );
+    // inputField.addEventListener("input", () => {
+    //     maxNumberFunc(firstNumber, secondNumber, thirdNumber);
+    // });
 });
+
+
     
 
