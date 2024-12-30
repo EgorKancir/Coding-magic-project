@@ -62,3 +62,17 @@ document.addEventListener("keydown", (event) => {
     }
 })
 
+// #Observer
+
+const decorLineObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 1
+});
+
+decorLineObserver.observe(decorLine);

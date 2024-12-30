@@ -72,3 +72,23 @@ saveBtn.addEventListener("click", _.debounce(() => {
 }, 1500)
 );
 // saveBtn.addEventListener("click", sendOption);
+
+// #Observer
+
+const sspGameElement = document.querySelectorAll(".ssp-game__label");
+
+const sspGameObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 0.3}s`; 
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target)
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+sspGameElement.forEach(element => {
+    sspGameObserver.observe(element);
+})

@@ -290,3 +290,24 @@ bottomBtn.addEventListener('click', () => {
     FirstLetter(scientists);
     bottomBtn.classList.add('filter-scientists__active-btn');
 });
+
+
+// #Observer
+
+const scientistBtnArr = leftBtnArr.concat(rightBtnArr, bottomBtn); 
+
+const scientistButtonObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${index * 0.3}s`; 
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 1
+});
+
+scientistBtnArr.forEach(element => {
+    scientistButtonObserver.observe(element);
+})

@@ -200,6 +200,7 @@
         gap: 20px;
     }
     &__filter-option-btn {
+        opacity: 0;
         padding: 10px 20px;
         border-radius: 20px;
         background-color: var(--filter-btn-bg);
@@ -216,6 +217,10 @@
             background: var(--lite-grey);
             color: var(--filter-btn-text-hover);
             transition: all 0.3s ease-in-out;
+        }
+        &.active {
+            opacity: 1;
+            transition: all 0.4s ease-in-out;
         }
     }
     &__active-scientist {
