@@ -1,8 +1,11 @@
 const modal = document.querySelector(".subscribe-modal");
+const userIdText = document.querySelector(".subscribe-modal__user-id");
 const closeBtn = document.querySelector(`.subscribe-modal__close-btn[data-modal="close-subscribe-modal"]`);
 let userEmail = document.getElementById("footer-user-email");
 const subscribeBtn = document.querySelector(".footer__form-submit");
 const backdrop = document.querySelector(".greeting-modal__backdrop");
+import { nanoid } from 'nanoid'
+import * as basicLightbox from 'basiclightbox';
 
 
 function validateEmail(email) {
@@ -14,8 +17,20 @@ function sendEmail(event) {
     const newUserEmail = userEmail.value.trim();
     if (validateEmail(newUserEmail)) {
         console.log(`Email нового користувача: "${newUserEmail}".`);
-        modal.classList.add('open-modal');
-        backdrop.classList.add('open-modal__activ-backdrop');
+        const id = nanoid(8);
+        const modal = basicLightbox.create(`
+            <div class="subscribe-modal">
+                <button class="subscribe-modal__close-btn" type="button" data-modal="close-subscribe-modal">
+                    <svg class="subscribe-modal__close-btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" fill="none">
+                        <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="inherit"/>
+                    </svg>
+                </button>
+                <h2 class="subscribe-modal__title">Дякую за підписку!</h2>
+                <p class="subscribe-modal__user-id">Ваш унікальний ID: ${id}</p>
+            </div>
+        `);
+        modal.show();
+        document.querySelector('.subscribe-modal__close-btn').addEventListener('click', () => modal.close());
         document.body.style.overflow = 'hidden';
     } else {
         alert('Введіть коректну електронну адресу.');
@@ -30,9 +45,4 @@ document.addEventListener("keydown", (event) => {
         event.preventDefault(); 
         sendEmail(event); 
     }
-})
-closeBtn.addEventListener("click", () => {
-    modal.classList.remove('open-modal');
-    backdrop.classList.remove('open-modal__activ-backdrop');
-    document.body.style.overflow = '';
 })

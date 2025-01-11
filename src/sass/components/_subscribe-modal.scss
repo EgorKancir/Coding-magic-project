@@ -2,19 +2,15 @@
     width: 463px;
     height: 245px;
     flex-shrink: 0;
-    z-index: 1000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
     background-color: var(--modal-bg);
     padding: 83px 0 138px 0;
-    @extend %position-center;
+    @extend %position-center-column;
+    gap: 10px;
     background-image: url("../image/raster/modal/sword@1x.png"), url("../image/raster/modal/puzzle@1x.png"), url("../image/raster/modal/game-development@1x.png"), url("../image/raster/modal/tic-tac-toe@1x.png");
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: top 69px left 43px, bottom 70px left 87px, top 69px right 42px, bottom 70px right 86px;
-    display: none;
     &__close-btn {
         position: absolute;
         background: inherit;
@@ -39,6 +35,15 @@
         text-align: center;
         font-family: Inter;
         font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__user-id {
+        color: var(--modal-text);
+        text-align: center;
+        font-family: Inter;
+        font-size: 15px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

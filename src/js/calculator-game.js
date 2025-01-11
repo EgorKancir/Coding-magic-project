@@ -36,6 +36,11 @@ function calculator(firstNum, sign, secondNum) {
             result = "Невідомий знак";
             break;
     }
-    decisionResult.textContent = result;
+    anime({
+        targets: decisionResult,
+        innerHTML: [0, result],
+        easing: 'linear',
+        round: 10 
+    });
 }
 decisionBtn.addEventListener("click", sendData);

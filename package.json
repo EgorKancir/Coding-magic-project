@@ -15,7 +15,9 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
     "bootstrap": "^5.3.3",
+    "nanoid": "^5.0.9",
     "sass": "^1.80.6",
     "scss": "^0.2.4"
   }

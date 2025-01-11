@@ -297,9 +297,8 @@ bottomBtn.addEventListener('click', () => {
 const scientistBtnArr = leftBtnArr.concat(rightBtnArr, bottomBtn); 
 
 const scientistButtonObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry, index) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.transitionDelay = `${index * 0.3}s`; 
             entry.target.classList.add('active');
             observer.unobserve(entry.target)
         }

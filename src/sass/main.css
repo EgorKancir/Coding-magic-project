@@ -4,13 +4,13 @@
   scroll-behavior: smooth;
 }
 
-.main__title-box, .subscribe-modal__close-btn, .subscribe-modal, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .greeting-modal__close-btn, .greeting-modal__main-group {
+.main__title-box, .subscribe-modal__close-btn, .filter-scientists__image--after::after, .filter-scientists__image:hover::after, .team-slider__bottom, .team-slider__top, .max-number-game__form, .max-number-game, .dino-game, .calculator-game__signs-group, .calculator-game__form, .ssp-game__label, .ssp-game__game-consol, .checking-form__submit, .nav__list, .header__info-group, .greeting-modal__close-btn, .greeting-modal__main-group {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main__content, .main, .filter-scientists, .team-slider__slide-content, .team-slider, .ssp-game__form, .game-section, .greeting-modal__label, .greeting-modal__form, .greeting-modal {
+.main__content, .main, .subscribe-modal, .filter-scientists, .team-slider__slide-content, .team-slider, .ssp-game__form, .game-section, .greeting-modal__label, .greeting-modal__form, .greeting-modal {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +83,62 @@
   --standart-btn-bg: #000;
   --standart-btn-text: #FFF;
   transition: all 0.8s ease-in-out;
+}
+
+.basicLightbox {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.01;
+  transition: opacity 0.4s ease;
+  z-index: 1000;
+  will-change: opacity;
+}
+.basicLightbox--visible {
+  opacity: 1;
+}
+.basicLightbox__placeholder {
+  max-width: 100%;
+  transform: scale(0.9);
+  transition: transform 0.4s ease;
+  z-index: 1;
+  will-change: transform;
+}
+.basicLightbox__placeholder > img:first-child:last-child,
+.basicLightbox__placeholder > video:first-child:last-child,
+.basicLightbox__placeholder > iframe:first-child:last-child {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 95%;
+  max-height: 95%;
+}
+.basicLightbox__placeholder > video:first-child:last-child,
+.basicLightbox__placeholder > iframe:first-child:last-child {
+  pointer-events: auto;
+}
+.basicLightbox__placeholder > img:first-child:last-child,
+.basicLightbox__placeholder > video:first-child:last-child {
+  width: auto;
+  height: auto;
+}
+.basicLightbox--img .basicLightbox__placeholder, .basicLightbox--video .basicLightbox__placeholder, .basicLightbox--iframe .basicLightbox__placeholder {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.basicLightbox--visible .basicLightbox__placeholder {
+  transform: scale(1);
 }
 
 .greeting-modal {
@@ -1771,18 +1827,14 @@
   width: 463px;
   height: 245px;
   flex-shrink: 0;
-  z-index: 1000;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 20px;
   background-color: var(--modal-bg);
   padding: 83px 0 138px 0;
+  gap: 10px;
   background-image: url("../image/raster/modal/sword@1x.png"), url("../image/raster/modal/puzzle@1x.png"), url("../image/raster/modal/game-development@1x.png"), url("../image/raster/modal/tic-tac-toe@1x.png");
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: top 69px left 43px, bottom 70px left 87px, top 69px right 42px, bottom 70px right 86px;
-  display: none;
 }
 .subscribe-modal__close-btn {
   position: absolute;
@@ -1807,6 +1859,15 @@
   text-align: center;
   font-family: Inter;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.subscribe-modal__user-id {
+  color: var(--modal-text);
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
