@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script type="module" crossorigin src="/Coding-magic-project/assets/index-VOCR8EVV.js"></script>
-    <link rel="stylesheet" crossorigin href="/Coding-magic-project/assets/index-CnKyATxl.css">
+    <script type="module" crossorigin src="/Coding-magic-project/assets/index-BgD7lvHp.js"></script>
+    <link rel="stylesheet" crossorigin href="/Coding-magic-project/assets/index-BBZTNeDX.css">
   </head>
   <body class="theme-light">
-    <header class="header">
+    <header class="header checkpoint">
       <div class="greeting-modal__backdrop open-modal__activ-backdrop"></div>
       <div class="greeting-modal open-modal">
         <div class="greeting-modal__main-group">
@@ -37,7 +37,7 @@
           <button class="greeting-modal__save-btn" type="button">Зберегти</button>
         </form>
       </div>
-      <div class="container header__content">
+      <div class="container header__content checkpoint__animation-box">
         <a class="header__logo-link" href="./index.html">
           <img class="header__logo-image-light logo-image--active" src="/Coding-magic-project/assets/main-logo-light-DWVwfSY6.svg" alt="Logo-light">
           <img class="header__logo-image-nigh" src="/Coding-magic-project/assets/main-logo-nigh-D_j7Kf3_.svg" alt="Logo-nigh">
@@ -93,13 +93,13 @@
     <main class="main">
         <div class="container">
           <div class="main__content">
-            <div class="main__title-box">
+            <div class="main__title-box checkpoint--text">
               <h1 class="main__title">Популярні інетрактивні ігри</h1>
             </div>
-            <hr class="decor-line">
-            <section class="game-section">
-                <h3 class="game-section__title">Перевір в який рік ти народився</h3>
-                <div class="checking-year">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint">
+                <h3 class="game-section__title checkpoint--text">Перевір в який рік ти народився</h3>
+                <div class="checking-year checkpoint__animation-box">
                   <form class="checking-form">
                     <label class="checking-form__label" for="input-year">
                       <input class="checking-form__input" type="text" name="year" id="input-year" placeholder="Введіть рік народження">
@@ -114,10 +114,10 @@
                   <h4 class="checking-year__result">???</h4>
                 </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section" id="guess-number">
-              <h3 class="game-section__title">Вгадай число, яке загадав комп’ютер</h3>
-              <div class="guess-number">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint" id="guess-number">
+              <h3 class="game-section__title checkpoint--text">Вгадай число, яке загадав комп’ютер</h3>
+              <div class="guess-number checkpoint__animation-box">
                 <form class="checking-form guess-number__form">
                   <label class="checking-form__label" for="user-number">
                     <input class="checking-form__input guess-number__input" type="text" name="number" id="user-number" placeholder="Введіть число">
@@ -132,10 +132,10 @@
                 <h4 class="guess-number__result">Введи число від 1 до 5</h4>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section">
-              <h3 class="game-section__title">Камінь - ножиці - папір</h3>
-              <div class="ssp-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint">
+              <h3 class="game-section__title checkpoint--text">Камінь - ножиці - папір</h3>
+              <div class="ssp-game checkpoint__animation-box">
                 <div class="ssp-game__result-consol">
                   <h4 class="ssp-game__result-consol-title">Рахунок:</h4>
                   <ul class="ssp-game__result-consol-list">
@@ -163,10 +163,10 @@
                 </form>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section">
-              <h3 class="game-section__title">Калькулятор</h3>
-              <div class="calculator-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint">
+              <h3 class="game-section__title checkpoint--text">Калькулятор</h3>
+              <div class="calculator-game checkpoint__animation-box">
                 <form class="calculator-game__form">
                   <label class="calculator-game__number-label" for="calculator-first-number">
                     <input class="calculator-game__number-input" type="text" id="calculator-first-number" name="first-number" placeholder="Введіть число">
@@ -189,10 +189,10 @@
                 <h3 class="calculator-game__resulat">Результат</h3>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section">
-              <h3 class="game-section__title">Калькулятор часу</h3>
-              <div class="timer-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint">
+              <h3 class="game-section__title checkpoint--text">Калькулятор часу</h3>
+              <div class="timer-game checkpoint__animation-box">
                 <form class="checking-form timer-game__form">
                   <label class="checking-form__label" for="timer-user-date">
                     <input class="checking-form__input timer-game__input" type="text" name="date" id="timer-user-date" placeholder="Введіть число">
@@ -210,26 +210,26 @@
                 <h4 class="timer-game__result">Введіть дату у форматі YYYY-MM-DDTHH:MM</h4>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section" id="dino">
-              <h3 class="game-section__title">Google динозавр</h3>
-              <div class="dino-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint" id="dino">
+              <h3 class="game-section__title checkpoint--text">Google динозавр</h3>
+              <div class="dino-game checkpoint__animation-box">
                 <a class="dino-game__link" href="https://dinorunner.com/" target="_blank">
                   <img class="dino-game__image" src="/Coding-magic-project/assets/dino-image@1x-rIEkVT6z.png" srcset="/Coding-magic-project/assets/dino-image@1x-rIEkVT6z.png 1x, /Coding-magic-project/assets/dino-image@2x-BjZfaIcq.png 2x" alt="Dino">
                 </a>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section" id="football">
-              <h3 class="game-section__title">Футбол</h3>
-              <div class="football-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint" id="football">
+              <h3 class="game-section__title checkpoint--text">Футбол</h3>
+              <div class="football-game checkpoint__animation-box">
                 <div class="football-game__ball"></div>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section">
-              <h3 class="game-section__title">Введіть 3 числа</h3>
-              <div class="max-number-game">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint">
+              <h3 class="game-section__title checkpoint--text">Введіть 3 числа</h3>
+              <div class="max-number-game checkpoint__animation-box">
                 <form class="max-number-game__form">
                   <label class="max-number-game__label" for="max-number-game-first">
                     <input class="max-number-game__input" type="text" id="max-number-game-first" name="first-max-number" placeholder="Введіть число">
@@ -244,10 +244,10 @@
                 <h3 class="max-number-game__resulat">Найбільше число, яке ви ввели - (число)</h3>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section" id="our-team">
-              <h3 class="game-section__title">Наша команда</h3>
-              <div class="team-slider">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint" id="our-team">
+              <h3 class="game-section__title checkpoint--text">Наша команда</h3>
+              <div class="team-slider checkpoint__animation-box">
                 <div class="team-slider__top">
                   <img class="team-slider__arrow team-slider__left-arrow" src="data:image/svg+xml,%3csvg%20width='52'%20height='102'%20viewBox='0%200%2052%20102'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M51%201L1%2051L51%20101'%20stroke='black'/%3e%3c/svg%3e" alt="Arrow-left">
                   <div class="team-slider__main-slider">
@@ -306,10 +306,10 @@
                 <div class="team-slider__bottom" id="team-slider-bottom"></div>
               </div>
             </section>
-            <hr class="decor-line">
-            <section class="game-section" id="scientists">
-              <h3 class="game-section__title">Обери вченого/их</h3>
-              <div class="filter-scientists">
+            <hr class="decor-line checkpoint--line">
+            <section class="game-section checkpoint" id="scientists">
+              <h3 class="game-section__title checkpoint--text">Обери вченого/их</h3>
+              <div class="filter-scientists checkpoint__animation-box">
                 <div class="filter-scientists__image-group">
                   <div class="filter-scientists__image filter-scientists__image--1"></div>
                   <div class="filter-scientists__image filter-scientists__image--2"></div>
@@ -346,8 +346,8 @@
           </div>
         </div>
     </main>
-    <footer class="footer">
-      <div class="container footer__content">
+    <footer class="footer checkpoint">
+      <div class="container footer__content checkpoint__animation-box">
         <a class="footer__logo-link" href="index.html">
           <img class="footer__logo-image-light logo-image--active" src="/Coding-magic-project/assets/main-logo-light-DWVwfSY6.svg" alt="Logo-light">
           <img class="footer__logo-image-nigh" src="/Coding-magic-project/assets/main-logo-nigh-D_j7Kf3_.svg" alt="Logo-nigh">
