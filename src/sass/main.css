@@ -1210,6 +1210,7 @@
 .dino-game {
   width: 720px;
   height: 273px;
+  padding-bottom: 10px;
 }
 .dino-game__link {
   width: 100%;
@@ -2102,6 +2103,24 @@ input:focus-visible, textarea:focus-visible, button:focus-visible {
   outline: none;
   border: none;
   color: var(--text-input);
+}
+
+.checkpoint {
+  overflow: hidden;
+}
+
+.checkpoint__animation-box {
+  transition: all 1s ease-in-out;
+}
+
+.checkpoint--left {
+  transition: transform 1s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.checkpoint--right {
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
 }
 
 .main__content {

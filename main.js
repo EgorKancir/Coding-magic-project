@@ -1,6 +1,7 @@
 import './src/sass/main.css'
 import './src/css/modern-normalize.css'
 import './src/css/reset.css'
+import './src/js/page-animation'
 import './src/js/greeting-modal'
 import './src/js/header'
 import './src/js/header-select'

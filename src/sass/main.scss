@@ -60,6 +60,20 @@ input, textarea, button {
         color: var(--text-input);
     }
 }
+.checkpoint {
+    overflow: hidden;
+}
+.checkpoint__animation-box {
+    transition: all 1s ease-in-out;
+}
+.checkpoint--left {
+    transition: transform 1s ease-in-out;
+    transform: translateX(-100%);
+}
+.checkpoint--right {
+    transition: transform 1s ease-in-out;
+    transform: translateX(100%);
+}
 .main {
     @extend %position-center-column;
     &__content {
